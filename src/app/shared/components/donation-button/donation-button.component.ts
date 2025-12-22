@@ -1,5 +1,4 @@
-import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { AnalyticsEvent } from '../../enums/analytics-events.enum';
 import { DonationSettings } from '../../models/app-settings.model';
@@ -9,14 +8,18 @@ import { AppSettingsService } from '../../services/app-settings.service';
 @Component({
     selector: 'app-donation-button',
     templateUrl: './donation-button.component.html',
-    imports: [CommonModule, RouterLink],
+    imports: [RouterLink],
     standalone: true
 })
 export class DonationButtonComponent {
-    @Input() buttonClass = '';
-    @Input() context: 'default' | 'contact' | 'footer' = 'default';
-    @Input() showTitle = true;
-    donationSettings: DonationSettings;
+    // Modern Angular 21 input() function
+    buttonClass = input<string>('');
+    context = input<'default' | 'contact' | 'footer'>('default');
+    showTitle = input<boolean>(true);
+    
+    // Inject services using modern inject() function
+    private appSettingsService = inject(AppSettingsService);
+    private analytics = inject(AnalyticsService);
 
     supportMessages = {
         default: {
@@ -35,12 +38,15 @@ export class DonationButtonComponent {
 
     contactMessage = "For donations and contributions, please contact our management team. We'll be happy to assist you with the process.";
 
-    constructor(private appSettings: AppSettingsService, private analytics: AnalyticsService) {
-        this.donationSettings = this.appSettings.getDonationSettings();
+    donationSettings: DonationSettings;
+
+    constructor() {
+        this.donationSettings = this.appSettingsService.getDonationSettings();
     }
 
     getSupportMessage() {
-        return this.supportMessages[this.context] || this.supportMessages.default;
+        const ctx = this.context();
+        return this.supportMessages[ctx] || this.supportMessages.default;
     }
 
     openDonationLink(paypalLink: string): void {

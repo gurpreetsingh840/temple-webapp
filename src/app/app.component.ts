@@ -1,6 +1,5 @@
 // src/app/app.component.ts
-import { CommonModule } from '@angular/common';
-import { Component, HostBinding, HostListener, OnInit, effect, signal } from '@angular/core';
+import { Component, HostBinding, HostListener, OnInit, effect, inject, signal } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { NavigationEnd, NavigationStart, Router, RouterOutlet } from '@angular/router';
 import { filter } from 'rxjs';
@@ -13,18 +12,19 @@ import { AnalyticsService } from './shared/services/analytics.service ';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, FooterComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent],
   template: `
     <div class="flex flex-col min-h-screen overflow-x-hidden">
       <app-header [darkMode]="darkMode()" (toggleDarkMode)="toggleDarkMode()" />
       <main class="flex-grow relative">
         <!-- Previous page placeholder -->
-        <div 
-          *ngIf="isNavigating"
-          class="absolute inset-0 z-10"
-          [class.animate-slide-out]="isNavigating">
-          <div class="absolute inset-0 bg-gradient-to-r from-transparent via-slate-100/10 to-slate-100/20 dark:via-slate-900/10 dark:to-slate-900/20"></div>
-        </div>
+        @if (isNavigating) {
+          <div 
+            class="absolute inset-0 z-10"
+            [class.animate-slide-out]="isNavigating">
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-slate-100/10 to-slate-100/20 dark:via-slate-900/10 dark:to-slate-900/20"></div>
+          </div>
+        }
         
         <!-- Current page content -->
         <div 
@@ -36,25 +36,26 @@ import { AnalyticsService } from './shared/services/analytics.service ';
       <app-footer />
 
       <!-- Scroll to top button -->
-      <button
-        *ngIf="showScrollTop"
-        (click)="scrollToTop()"
-        class="fixed bottom-6 right-6 p-3 rounded-full bg-rose-600 dark:bg-rose-500 text-white shadow-lg hover:bg-rose-500 dark:hover:bg-rose-400 transition-all duration-300 transform hover:scale-110"
-        aria-label="Scroll to top">
-        <svg 
-          xmlns="http://www.w3.org/2000/svg" 
-          class="h-6 w-6" 
-          fill="none" 
-          viewBox="0 0 24 24" 
-          stroke="currentColor">
-          <path 
-            stroke-linecap="round" 
-            stroke-linejoin="round" 
-            stroke-width="2" 
-            d="M5 15l7-7 7 7" 
-          />
-        </svg>
-      </button>
+      @if (showScrollTop) {
+        <button
+          (click)="scrollToTop()"
+          class="fixed bottom-6 right-6 p-3 rounded-full bg-rose-600 dark:bg-rose-500 text-white shadow-lg hover:bg-rose-500 dark:hover:bg-rose-400 transition-all duration-300 transform hover:scale-110"
+          aria-label="Scroll to top">
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            class="h-6 w-6" 
+            fill="none" 
+            viewBox="0 0 24 24" 
+            stroke="currentColor">
+            <path 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              stroke-width="2" 
+              d="M5 15l7-7 7 7" 
+            />
+          </svg>
+        </button>
+      }
     </div>
   `,
   styles: [`
@@ -96,6 +97,11 @@ import { AnalyticsService } from './shared/services/analytics.service ';
   `]
 })
 export class AppComponent implements OnInit {
+  // Inject dependencies using modern inject() function
+  private router = inject(Router);
+  private titleService = inject(Title);
+  private analytics = inject(AnalyticsService);
+
   isNavigating = false;
   showScrollTop = false;
 
@@ -116,11 +122,7 @@ export class AppComponent implements OnInit {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  constructor(
-    private router: Router,
-    private titleService: Title,
-    private analytics: AnalyticsService
-  ) {
+  constructor() {
     effect(() => {
       const mode = this.darkMode();
       window.localStorage.setItem('darkMode', JSON.stringify(mode));

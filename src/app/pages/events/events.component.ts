@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component, HostListener, OnDestroy, OnInit } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { PageHeroComponent } from '../../shared/components/page-hero/page-hero.component';
 import { PageLoaderComponent } from '../../shared/components/page-loader/page-loader.component';
 import { EventData, EventsService, GroupedEvents } from './events.service';
@@ -23,7 +23,7 @@ export class EventsComponent implements OnInit, AfterViewInit, OnDestroy {
     readonly CHAR_LIMIT = 250;
     readonly MOBILE_CHAR_LIMIT = 150;
 
-    constructor(protected eventsService: EventsService) { }
+    constructor(protected eventsService: EventsService, private cdr: ChangeDetectorRef) { }
 
     ngOnInit() {
         this.eventsService.getGroupedEvents().subscribe({
@@ -32,17 +32,22 @@ export class EventsComponent implements OnInit, AfterViewInit, OnDestroy {
                 this.displayedMonths = displayedMonths;
                 this.currentMonth = this.eventsService.getCurrentMonth();
                 this.isLoading = false;
+                this.cdr.detectChanges();
             },
             error: () => {
                 this.isLoading = false;
+                this.cdr.detectChanges();
             }
         });
     }
 
     ngAfterViewInit() {
         setTimeout(() => {
-            this.scrollToMonth(this.currentMonth);
-            this.setupIntersectionObserver();
+            // Only run scroll/observer if not loading
+            if (!this.isLoading) {
+                this.scrollToMonth(this.currentMonth);
+                this.setupIntersectionObserver();
+            }
         }, 100);
     }
 

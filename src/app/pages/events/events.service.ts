@@ -51,15 +51,29 @@ export class EventsService {
     }
 
     private groupEventsByMonth(events: EventData[]) {
-        const currentYear = new Date().getFullYear();
+        const now = new Date();
+        const currentYear = now.getFullYear();
+        const currentMonthIndex = now.getMonth(); // 0-based
 
-        // Filter events for current year only
-        const currentYearEvents = events.filter(event => {
-            const eventYear = this.parseDate(event.date).getFullYear();
-            return eventYear === currentYear;
+        // Calculate previous, current, and next month indices
+        const prevMonth = new Date(currentYear, currentMonthIndex - 1, 1);
+        const nextMonth = new Date(currentYear, currentMonthIndex + 1, 1);
+
+        // Helper to get month key (e.g., 'January')
+        const getMonthKey = (date: Date) => date.toLocaleString('default', { month: 'long' });
+
+        // Only include events from previous, current, and next month
+        const validMonths = [getMonthKey(prevMonth), getMonthKey(now), getMonthKey(nextMonth)];
+
+        // Filter events for these months (in current year)
+        const filteredEvents = events.filter(event => {
+            const eventDate = this.parseDate(event.date);
+            const eventMonth = eventDate.toLocaleString('default', { month: 'long' });
+            const eventYear = eventDate.getFullYear();
+            return eventYear === currentYear && validMonths.includes(eventMonth);
         });
 
-        const groupedEvents = currentYearEvents.reduce((groups, event) => {
+        const groupedEvents = filteredEvents.reduce((groups, event) => {
             const date = this.parseDate(event.date);
             const month = date.toLocaleString('default', { month: 'long' });
             if (!groups[month]) {
@@ -69,12 +83,8 @@ export class EventsService {
             return groups;
         }, {} as GroupedEvents);
 
-        // Sort months chronologically
-        const displayedMonths = Object.keys(groupedEvents).sort((a, b) => {
-            const monthA = new Date(Date.parse(`${a} 1, ${currentYear}`));
-            const monthB = new Date(Date.parse(`${b} 1, ${currentYear}`));
-            return monthA.getTime() - monthB.getTime();
-        });
+        // Sort months chronologically (prev, current, next)
+        const displayedMonths = validMonths.filter(m => groupedEvents[m]);
 
         // Sort events within each month
         for (const month in groupedEvents) {

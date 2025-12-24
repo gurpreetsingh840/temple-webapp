@@ -2,76 +2,38 @@
     @apply p-5 flex justify-center;
 }
 
-/* Wrapper Around the Entire Gallery */
-/* Gallery Wrapper - Now it Pops! */
 .gallery-container {
-    @apply w-full max-w-[1400px] mx-auto p-6 rounded-xl shadow-lg dark:shadow-gray-800 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 backdrop-blur-md bg-opacity-90 dark:bg-opacity-80 transition-all duration-500 ease-in-out;
+    @apply w-full max-w-[1400px] mx-auto p-6 rounded-xl shadow-lg dark:shadow-gray-800 border border-gray-300 dark:border-gray-700 bg-white/90 dark:bg-gray-900/80 backdrop-blur-md transition-shadow duration-500 hover:shadow-2xl dark:hover:shadow-gray-900;
 }
 
-/* Dark Mode Enhancements */
-.gallery-container:hover {
-    @apply shadow-2xl dark:shadow-gray-900;
-}
-
-/* Masonry Grid */
 .masonry-grid {
     @apply columns-2 sm:columns-3 md:columns-4 gap-4;
 }
 
-/* Masonry Items with Depth */
 .masonry-item {
-    @apply mb-4 break-inside-avoid cursor-pointer bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md dark:shadow-gray-900 border border-gray-200 dark:border-gray-700 transition-transform duration-300 ease-in-out;
+    @apply mb-4 break-inside-avoid cursor-pointer bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md dark:shadow-gray-900 border border-gray-200 dark:border-gray-700 transition-transform duration-300 hover:scale-105 hover:shadow-lg dark:hover:shadow-orange-400;
 }
 
-/* Subtle Glow on Hover */
-.masonry-item:hover {
-    @apply scale-105 shadow-lg dark:shadow-orange-400;
-}
+.masonry-item:nth-child(3n) { @apply aspect-[4/3]; }
+.masonry-item:nth-child(5n) { @apply aspect-square; }
+.masonry-item:nth-child(7n) { @apply aspect-[3/4]; }
 
-/* Dynamic Heights for True Masonry Effect */
-.masonry-item:nth-child(3n) {
-    @apply aspect-[4/3];
-}
-
-.masonry-item:nth-child(5n) {
-    @apply aspect-square;
-}
-
-.masonry-item:nth-child(7n) {
-    @apply aspect-[3/4];
-}
-
-/* Image Styling */
 .masonry-image {
     @apply w-full h-full object-cover rounded-lg;
 }
 
-/* Lightbox */
 .lightbox-container {
-    @apply relative w-[90vw] sm:w-[70vw] md:w-[50vw] max-w-[90vw] sm:max-w-[70vw] md:max-w-[50vw] max-h-[80vh] flex items-center justify-center bg-white dark:bg-gray-900 p-8 rounded-lg shadow-xl dark:shadow-gray-800;
+    @apply relative w-[90vw] sm:w-[70vw] md:w-[50vw] max-h-[80vh] flex items-center justify-center bg-white dark:bg-gray-900 p-8 rounded-lg shadow-xl dark:shadow-gray-800;
 }
 
-/* Close Button */
 .close-button {
-    @apply absolute top-[-20px] right-[-20px] bg-gray-200 dark:bg-gray-700 rounded-full w-10 h-10 flex items-center justify-center cursor-pointer transition-colors duration-300 ease-in-out shadow-md;
+    @apply absolute -top-5 -right-5 bg-gray-200 dark:bg-gray-700 rounded-full w-10 h-10 flex items-center justify-center cursor-pointer transition-colors duration-300 shadow-md hover:bg-gray-300 dark:hover:bg-gray-600 hover:shadow-lg;
 }
 
-.close-button:hover {
-    @apply bg-gray-300 dark:bg-gray-600 shadow-lg;
-}
-
-/* Navigation Buttons - Now Properly Aligned */
 .prev-button,
 .next-button {
-    @apply absolute text-3xl text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-orange-400 cursor-pointer;
+    @apply absolute text-3xl text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-orange-400 cursor-pointer top-1/2 -translate-y-1/2;
 }
 
-/* Left (Previous) Button */
-.prev-button {
-    @apply left-4 top-1/2 transform -translate-y-1/2;
-}
-
-/* Right (Next) Button - FIXED Placement */
-.next-button {
-    @apply right-4 top-1/2 transform -translate-y-1/2;
-}
+.prev-button { @apply left-4; }
+.next-button { @apply right-4; }

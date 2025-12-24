@@ -1,32 +1,30 @@
-<ng-container *ngIf="donationSettings">
+@if (donationSettings) {
     <div class="support-section">
-        <ng-container *ngIf="showTitle">
+        @if (showTitle()) {
             <h3 class="text-lg font-semibold text-white mb-3">
                 {{ getSupportMessage().title }}
             </h3>
             <p class="text-gray-300 mb-4">
                 {{ getSupportMessage().description }}
             </p>
-        </ng-container>
+        }
 
-        <div *ngIf="donationSettings.enabled; else disabledDonation">
+        @if (donationSettings.enabled) {
             <a [href]="donationSettings.paypalLink" target="_blank" rel="noopener noreferrer"
-                [class]="buttonClass || 'inline-flex items-center justify-center px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white font-medium rounded-lg transition-colors duration-200'">
+                [class]="buttonClass() || 'inline-flex items-center justify-center px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white font-medium rounded-lg transition-colors duration-200'">
                 <i class="fa-solid fa-heart mr-2"></i>
                 Donate Now
             </a>
-        </div>
-
-        <ng-template #disabledDonation>
+        } @else {
             <div class="text-gray-300">
                 <p>{{ contactMessage }}</p>
-                <ng-container *ngIf="context !== 'contact'">
+                @if (context() !== 'contact') {
                     <a routerLink="/contact" (click)="trackContactManagement()"
                         class="text-orange-600 dark:text-orange-400 hover:underline mt-2 inline-block">
                         Contact Management →
                     </a>
-                </ng-container>
+                }
             </div>
-        </ng-template>
+        }
     </div>
-</ng-container>
+}

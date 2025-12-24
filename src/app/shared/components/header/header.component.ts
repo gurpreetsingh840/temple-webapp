@@ -1,6 +1,5 @@
 // src/app/header/header.component.ts
-import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, OnInit, inject, input, output, signal } from '@angular/core';
 import { Event, NavigationEnd, Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { Banner, BannerService } from '../../services/banner.service';
@@ -18,7 +17,6 @@ interface MenuItem {
   selector: 'app-header',
   standalone: true,
   imports: [
-    CommonModule,
     RouterLink,
     RouterLinkActive,
     ContactInfoComponent,
@@ -28,8 +26,14 @@ interface MenuItem {
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  @Input() darkMode: boolean = false;
-  @Output() toggleDarkMode = new EventEmitter<void>();
+  // Modern Angular 21 input/output
+  darkMode = input<boolean>(false);
+  toggleDarkMode = output<void>();
+  
+  // Inject dependencies using modern inject() function
+  private router = inject(Router);
+  private bannerService = inject(BannerService);
+  // Use signals for reactive state
   menuItems: MenuItem[] = [
     {
       path: '/',
@@ -53,37 +57,35 @@ export class HeaderComponent implements OnInit {
     { path: '/contact', label: 'Contact' }
   ];
 
-  isMenuOpen = false;
-  banners: Banner[] = [];
-
-  constructor(private router: Router, private bannerService: BannerService) { }
+  isMenuOpen = signal(false);
+  banners = signal<Banner[]>([]);
 
   ngOnInit() {
     this.router.events.pipe(
       filter((event: Event): event is NavigationEnd => event instanceof NavigationEnd)
     ).subscribe(() => {
       window.scrollTo(0, 0);
-      this.isMenuOpen = false;
+      this.isMenuOpen.set(false);
     });
 
     this.bannerService.getBanners().subscribe(banners => {
-      this.banners = banners;
+      this.banners.set(banners);
     });
   }
 
   toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
+    this.isMenuOpen.update(value => !value);
   }
 
   onToggleDarkMode() {
     this.toggleDarkMode.emit();
-    this.isMenuOpen = false;
+    this.isMenuOpen.set(false);
   }
 
   navigateWithFragment(path: string) {
     const [route, fragment] = path.split('#');
     this.router.navigate([route], { fragment }).then(() => {
-      this.isMenuOpen = false;
+      this.isMenuOpen.set(false);
 
       if (this.router.url.startsWith(route) && fragment) {
         setTimeout(() => {

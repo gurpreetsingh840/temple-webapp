@@ -2,837 +2,715 @@
     "events": [
         {
             "id": 1,
-            "name": "Panchami",
-            "date": "2025-01-04",
-            "desc": "Panchami (21 Poh 556) - A day in the lunar calendar observed by Sikhs."
+            "name": "Puranmashi",
+            "date": "2026-01-03",
+            "desc": "Puranmashi (20 Poh 557)",
+            "descHindi": "पूर्णिमा (२० पोह ५५७)",
+            "descPunjabi": "ਪੂਰਨਮਾਸ਼ੀ (੨੦ ਪੋਹ ੫੫੭)"
         },
         {
             "id": 2,
-            "name": "Guru Gobind Singh Prakash",
-            "date": "2025-01-06",
-            "desc": "Prakash Gurpurab Sri Guru Gobind Singh ji (23 Poh 556) - The sacred birth anniversary of the tenth Guru of the Sikhs, revered for his establishment of the Khalsa Panth in 1699, which gave Sikhs their distinct identity through the Five Ks. As a spiritual master, warrior-saint, poet, and philosopher, He authored numerous compositions including the Dasam Granth and completed the canonization of the Sri Guru Granth Sahib. His teachings emphasize spiritual discipline, social justice, and the equality of all human beings."
+            "name": "Shaheedi Diwas Bhai Kehar Singh Bhai Satwant Singh",
+            "date": "2026-01-06",
+            "desc": "Shaheedi Diwas Bhai Kehar Singh Bhai Satwant Singh (23 Poh 557)",
+            "descHindi": "शहीदी दिवस भाई केहर सिंह भाई सतवंत सिंह (२३ पोह ५५७)",
+            "descPunjabi": "ਸ਼ਹੀਦੀ ਦਿਹਾੜਾ ਭਾਈ ਕੇਹਰ ਸਿੰਘ ਭਾਈ ਸਤਵੰਤ ਸਿੰਘ (੨੩ ਪੋਹ ੫੫੭)"
         },
         {
             "id": 3,
-            "name": "Dashmi",
-            "date": "2025-01-09",
-            "desc": "Dashmi (26 Poh 556) - A day in the lunar calendar observed by Sikhs."
+            "name": "Sangrand",
+            "date": "2026-01-14",
+            "desc": "Sangrand (Magh), Foundation day Sachkhand Sri Harimandir Sahib (Amritsar), Jor Mela Sri Muktsar Sahib (Maghi) (01 Magh 557)",
+            "descHindi": "संक्रांति (माघ), स्थापना दिवस सचखंड श्री हरिमंदिर साहिब (अमृतसर), जोड़ मेला श्री मुक्तसर साहिब (माघी) (०१ माघ ५५७)",
+            "descPunjabi": "ਸੰਗਰਾਂਦ (ਮਾਘ), ਨੀਂਹ-ਪੱਥਰ ਸੱਚਖੰਡ ਸ੍ਰੀ ਹਰਿਮੰਦਰ ਸਾਹਿਬ (ਅੰਮ੍ਰਿਤਸਰ), ਜੋੜ ਮੇਲਾ ਸ੍ਰੀ ਮੁਕਤਸਰ ਸਾਹਿਬ (ਮਾਘੀ) (੦੧ ਮਾਘ ੫੫੭)"
         },
         {
             "id": 4,
-            "name": "Lohri",
-            "date": "2025-01-13",
-            "desc": "Puranmashi, Lohri (30 Poh 556) - A popular winter folk festival celebrated in the Punjab region, often associated with the harvest and the end of winter."
+            "name": "Masya",
+            "date": "2026-01-18",
+            "desc": "Masya (05 Magh 557)",
+            "descHindi": "अमावस्या (०५ माघ ५५७)",
+            "descPunjabi": "ਮੱਸਿਆ (੦੫ ਮਾਘ ੫੫੭)"
         },
         {
             "id": 5,
-            "name": "Sangrand (Magh), Sri Harimandir Sahib Foundation Day",
-            "date": "2025-01-14",
-            "desc": "Foundation day Sachkhand Sri Harimandir Sahib (Amritsar), Jor Mela Sri Muktsar Sahib (Maghi) (01 Magh 556) - Sri Harmandir Sahib, also known as the Golden Temple, was founded by Sri Guru Arjan Dev Ji in 1581. It represents the spiritual and temporal seat of Sikh faith, embodying the principles of equality, harmony, and divine wisdom. The architecture symbolizes the Sikh vision of humility and openness with its four entrances welcoming all humanity regardless of caste, creed, or religion. The day also coincides with Jor Mela Sri Muktsar Sahib (Maghi), commemorating the sacrifice of the Chali Mukte (Forty Liberated Ones)."
+            "name": "Chabiyan Da Morcha",
+            "date": "2026-01-20",
+            "desc": "Chabiyan Da Morcha (Amritsar) (07 Magh 557)",
+            "descHindi": "चाबीआं का मोर्चा (अमृसतर) (०७ माघ ५५७)",
+            "descPunjabi": "ਚਾਬੀਆਂ ਦਾ ਮੋਰਚਾ (ਅੰਮ੍ਰਿਤਸਰ) (੦੭ ਮਾਘ ੫੫੭)"
         },
         {
             "id": 6,
-            "name": "Baba Deep Singh Birthday",
-            "date": "2025-01-27",
-            "desc": "Birthday Baba Deep Singh ji (14 Magh 556) - Celebrates the birth anniversary of Baba Deep Singh Ji, a revered Sikh scholar and martyr known for his selfless service and sacrifice for the Sikh faith."
+            "name": "Panchami, Basant Panchami, Marriage Day : Sri Guru Gobind Singh ji",
+            "date": "2026-01-23",
+            "desc": "Panchami, Basant Panchami, Marriage Day : Sri Guru Gobind Singh ji (Guru ka Lahore) (10 Magh 557)",
+            "descHindi": "पंचमी, बसंत पंचमी, विवाह दिवस : श्री गुरु गोबिंद सिंह जी (गुरु का लाहौर) (१० माघ ५५७)",
+            "descPunjabi": "ਪੰਚਮੀ, ਬਸੰਤ ਪੰਚਮੀ, ਵਿਆਹ ਪੁਰਬ : ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ (ਗੁਰੂ ਕਾ ਲਾਹੌਰ) (੧੦ ਮਾਘ ੫੫੭)"
         },
         {
             "id": 7,
-            "name": "Masya",
-            "date": "2025-01-29",
-            "desc": "Masya (16 Magh 556) - The new moon day in the lunar calendar, observed by Sikhs."
+            "name": "Janamdin Baba Deep Singh ji",
+            "date": "2026-01-27",
+            "desc": "Janamdin Baba Deep Singh ji (14 Magh 557)",
+            "descHindi": "जन्मदिन बाबा दीप सिंह जी (१४ माघ ५५७)",
+            "descPunjabi": "ਜਨਮਦਿਨ ਬਾਬਾ ਦੀਪ ਸਿੰਘ ਜੀ (੧੪ ਮਾਘ ੫੫੭)"
         },
         {
             "id": 8,
-            "name": "Basant Panchami",
-            "date": "2025-02-02",
-            "desc": "Panchami, Basant Panchami, Marriage Day : Sri Guru Gobind Singh ji (Guru ka Lahore) (20 Magh 556) - Celebrates the arrival of spring and is also recognized as the marriage day of Sri Guru Gobind Singh Ji, which took place in Guru ka Lahore."
+            "name": "Dashmi",
+            "date": "2026-01-28",
+            "desc": "Dashmi (15 Magh 557)",
+            "descHindi": "दशमी (१५ माघ ५५७)",
+            "descPunjabi": "ਦਸ਼ਮੀ (੧੫ ਮਾਘ ੫੫੭)"
         },
         {
             "id": 9,
-            "name": "Dashmi",
-            "date": "2025-02-07",
-            "desc": "Dashmi (25 Magh 556) - A day in the lunar calendar observed by Sikhs."
+            "name": "Prakash Gurpurab Sri Guru Harirai Sahib ji",
+            "date": "2026-01-31",
+            "desc": "Prakash Gurpurab Sri Guru Harirai Sahib ji (18 Magh 557)",
+            "descHindi": "प्रकाश गुरुपुरब श्री गुरु हरिराय साहिब जी (१८ माघ ५५७)",
+            "descPunjabi": "ਪ੍ਰਕਾਸ਼ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਹਰਿਰਾਇ ਸਾਹਿਬ ਜੀ (੧੮ ਮਾਘ ੫੫੭)"
         },
         {
             "id": 10,
-            "name": "Wadda Ghallughara",
-            "date": "2025-02-09",
-            "desc": "Wadda Ghallughara Kup Rohira (Sangrur) (27 Magh 556) - Commemorates the 'Greater Holocaust' of 1762, where a large number of Sikhs were massacred near Kup Rohira, a significant event in Sikh history marking resilience and sacrifice."
+            "name": "Puranmashi, Janamdin Bhagat Ravidas ji",
+            "date": "2026-02-01",
+            "desc": "Puranmashi, Janamdin Bhagat Ravidas ji (19 Magh 557)",
+            "descHindi": "पूर्णिमा, जन्मदिन भगत रविदास जी (१९ माघ ५५७)",
+            "descPunjabi": "ਪੂਰਨਮਾਸ਼ੀ, ਜਨਮਦਿਨ ਭਗਤ ਰਵਿਦਾਸ ਜੀ (੧੯ ਮਾਘ ੫੫੭)"
         },
         {
             "id": 11,
-            "name": "Prakash Gurpurab Sri Guru Harirai Ji",
-            "date": "2025-02-10",
-            "desc": "Prakash Gurpurab Sri Guru Harirai ji (28 Magh 556) - Celebrates the birth anniversary of Sri Guru Harirai Ji, the seventh Guru of the Sikhs, known for his compassion and environmental stewardship."
+            "name": "Wadda Ghallughara Kup Rohira",
+            "date": "2026-02-09",
+            "desc": "Wadda Ghallughara Kup Rohira (Sangrur) (27 Magh 557)",
+            "descHindi": "बड़ा घल्लूघारा कुप रोहिरा (संगरूर) (२७ माघ ५५७)",
+            "descPunjabi": "ਵੱਡਾ ਘੱਲੂਘਾਰਾ ਕੂਪ ਰੋਹਿਰਾ (ਸੰਗਰੂਰ) (੨੭ ਮਾਘ ੫੫੭)"
         },
         {
             "id": 12,
-            "name": "Sahibzada Ajit Singh Birthday",
-            "date": "2025-02-11",
-            "desc": "Birthday Sahibzada Ajit Singh ji (29 Magh 556) - Marks the birth anniversary of Sahibzada Ajit Singh Ji, the eldest son of Guru Gobind Singh Ji, revered for his bravery and sacrifice at the Battle of Chamkaur."
+            "name": "Janamdin Sahibzada Ajit Singh ji",
+            "date": "2026-02-11",
+            "desc": "Janamdin Sahibzada Ajit Singh ji (29 Magh 557)",
+            "descHindi": "जन्मदिन साहिबज़ादा अजीत सिंह जी (२९ माघ ५५७)",
+            "descPunjabi": "ਜਨਮਦਿਨ ਸਾਹਿਬਜ਼ਾਦਾ ਅਜੀਤ ਸਿੰਘ ਜੀ (੨੯ ਮਾਘ ੫੫੭)"
         },
         {
             "id": 13,
-            "name": "Sangrand (Phagun), Bhagat Ravidas Birthday",
-            "date": "2025-02-12",
-            "desc": "Puranmashi, Birthday Bhagat Ravidas ji (01 Phagun 556) - Celebrates the birth anniversary of Bhagat Ravidas Ji, a revered saint and poet whose hymns are included in the Sri Guru Granth Sahib, emphasizing social justice and equality."
+            "name": "Sangrand",
+            "date": "2026-02-12",
+            "desc": "Sangrand (Phagun) (01 Phagun 557)",
+            "descHindi": "संक्रांति (फग्गन) (०१ फग्गन ५५७)",
+            "descPunjabi": "ਸੰਗਰਾਂਦ (ਫੱਗਣ) (੦੧ ਫੱਗਣ ੫੫੭)"
         },
         {
             "id": 14,
-            "name": "Saka Sri Nankana Sahib",
-            "date": "2025-02-21",
-            "desc": "Saka Sri Nankana Sahib (Pakistan), Jaitu Da Morcha (Faridkot) (10 Phagun 556) - Commemorates the tragic massacre at Sri Nankana Sahib in 1921, where peaceful Sikh protestors were killed, and Jaitu Da Morcha, a significant event in the Gurudwara Reform Movement."
+            "name": "Masya",
+            "date": "2026-02-17",
+            "desc": "Masya (06 Phagun 557)",
+            "descHindi": "अमावस्या (०६ फग्गन ५५७)",
+            "descPunjabi": "ਮੱਸਿਆ (੦੬ ਫੱਗਣ ੫੫੭)"
         },
         {
             "id": 15,
-            "name": "Masya",
-            "date": "2025-02-27",
-            "desc": "Masya (16 Phagun 556) - The new moon day in the lunar calendar, observed by Sikhs."
+            "name": "Saka Sri Nankana Sahib",
+            "date": "2026-02-21",
+            "desc": "Saka Sri Nankana Sahib (Pakistan), Jaitu Da Morcha (Faridkot) (10 Phagun 557)",
+            "descHindi": "साका श्री ननकाना साहिब (पाकिस्तान), जैतो का मोर्चा (फरीदकोट) (१० फग्गन ५५७)",
+            "descPunjabi": "ਸਾਕਾ ਸ੍ਰੀ ਨਨਕਾਣਾ ਸਾਹਿਬ (ਪਾਕਿਸਤਾਨ), ਜੈਤੋ ਦਾ ਮੋਰਚਾ (ਫਰੀਦਕੋਟ) (੧੦ ਫੱਗਣ ੫੫੭)"
         },
         {
             "id": 16,
             "name": "Panchami",
-            "date": "2025-03-04",
-            "desc": "Panchami (21 Phagun 556) - A day in the lunar calendar observed by Sikhs."
+            "date": "2026-02-22",
+            "desc": "Panchami (11 Phagun 557)",
+            "descHindi": "पंचमी (११ फग्गन ५५७)",
+            "descPunjabi": "ਪੰਚਮੀ (੧੧ ਫੱਗਣ ੫੫੭)"
         },
         {
             "id": 17,
             "name": "Dashmi",
-            "date": "2025-03-09",
-            "desc": "Dashmi (26 Phagun 556) - A day in the lunar calendar observed by Sikhs."
+            "date": "2026-02-26",
+            "desc": "Dashmi (15 Phagun 557)",
+            "descHindi": "दशमी (१५ फग्गन ५५७)",
+            "descPunjabi": "ਦਸ਼ਮੀ (੧੫ ਫੱਗਣ ੫੫੭)"
         },
         {
             "id": 18,
-            "name": "Sangrand (Chet), Punjabi New Year",
-            "date": "2025-03-14",
-            "desc": "Puranmashi, Nanakshahi Punjabi New Year 557, Holi, Shaheedi Diwas Jathedar Akali Phula Singh ji (01 Chet 557) - Marks the beginning of the Nanakshahi calendar, the Sikh New Year, and coincides with the Hindu festival of Holi and the martyrdom day of Jathedar Akali Phula Singh Ji, a prominent Sikh leader."
+            "name": "Puranmashi",
+            "date": "2026-03-03",
+            "desc": "Puranmashi (20 Phagun 557)",
+            "descHindi": "पूर्णिमा (२० फग्गन ५५७)",
+            "descPunjabi": "ਪੂਰਨਮਾਸ਼ੀ (੨੦ ਫੱਗਣ ੫੫੭)"
         },
         {
             "id": 19,
             "name": "Hola Mahalla",
-            "date": "2025-03-15",
-            "desc": "Hola Mahalla Sri Anandpur Sahib, S. Baghel Singh Delhi Fateh (02 Chet 557) - A Sikh festival that takes place at Sri Anandpur Sahib, characterized by displays of martial arts, horsemanship, and community service, and commemorates S. Baghel Singh's conquest of Delhi."
+            "date": "2026-03-04",
+            "desc": "Hola Mahalla (21 Phagun 557)",
+            "descHindi": "होला महल्ला (२१ फग्गन ५५७)",
+            "descPunjabi": "ਹੋਲਾ ਮਹੱਲਾ (੨੧ ਫੱਗਣ ੫੫੭)"
         },
         {
             "id": 20,
-            "name": "Shaheed Bhagat Singh Day",
-            "date": "2025-03-23",
-            "desc": "Shaheedi Diwas S. Bhagat Singh (10 Chet 557) - A day to remember and honor Shaheed Bhagat Singh, a revolutionary freedom fighter who fought for India's independence."
+            "name": "Sangrand",
+            "date": "2026-03-14",
+            "desc": "Sangrand (Chet), Nanakshahi Punjabi New Year 558 (01 Chet 558)",
+            "descHindi": "संक्रांति (चेत), नानकशाही पंजाबी नया साल ५५८ (०१ चेत ५५८)",
+            "descPunjabi": "ਸੰਗਰਾਂਦ (ਚੇਤ), ਨਾਨਕਸ਼ਾਹੀ ਪੰਜਾਬੀ ਨਵਾਂ ਸਾਲ ੫੫੮ (੦੧ ਚੇਤ ੫੫੮)"
         },
         {
             "id": 21,
-            "name": "Shaheedi Bhai Subeg Singh & Shahbaz Singh",
-            "date": "2025-03-25",
-            "desc": "Shaheedi Diwas Bhai Subeg Singh Bhai Shahbaz Singh (12 Chet 557) - Commemorates the martyrdom of Bhai Subeg Singh and his son Bhai Shahbaz Singh, who were executed for refusing to renounce their Sikh faith."
+            "name": "Gurgaddi Gurpurab Sri Guru Harirai ji",
+            "date": "2026-03-17",
+            "desc": "Gurgaddi Gurpurab Sri Guru Harirai ji (04 Chet 558)",
+            "descHindi": "गुरुगद्दी गुरुपुरब श्री गुरु हरिराय जी (०४ चेत ५५८)",
+            "descPunjabi": "ਗੁਰਗੱਦੀ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਹਰਿਰਾਇ ਜੀ (੦੪ ਚੇਤ ੫੫੮)"
         },
         {
             "id": 22,
-            "name": "Gurgaddi Sri Guru Harirai Ji",
-            "date": "2025-03-27",
-            "desc": "Gurgaddi Gurpurab Sri Guru Harirai ji (14 Chet 557) - Celebrates the day Sri Guru Harirai Ji assumed the Guruship, becoming the seventh Guru of the Sikhs."
+            "name": "Masya, Gurgaddi Gurpurab Sri Guru Amardas ji",
+            "date": "2026-03-19",
+            "desc": "Masya, Gurgaddi Gurpurab Sri Guru Amardas ji (06 Chet 558)",
+            "descHindi": "अमावस्या, गुरुगद्दी गुरुपुरब श्री गुरु अमरदास जी (०६ चेत ५५८)",
+            "descPunjabi": "ਮੱਸਿਆ, ਗੁਰਗੱਦੀ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਅਮਰਦਾਸ ਜੀ (੦੬ ਚੇਤ ੫੫੮)"
         },
         {
             "id": 23,
-            "name": "Masya",
-            "date": "2025-03-29",
-            "desc": "Masya (16 Chet 557) - The new moon day in the lunar calendar, observed by Sikhs."
+            "name": "Jyoti jyot Gurpurab Sri Guru Angad Dev ji",
+            "date": "2026-03-22",
+            "desc": "Jyoti jyot Gurpurab Sri Guru Angad Dev ji (09 Chet 558)",
+            "descHindi": "ज्योति ज्योत गुरुपुरब श्री गुरु अंगद देव जी (०९ चेत ५५८)",
+            "descPunjabi": "ਜੋਤੀ ਜੋਤਿ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ (੦੯ ਚੇਤ ੫੫੮)"
         },
         {
             "id": 24,
-            "name": "Gurgaddi Sri Guru Amardas Ji",
-            "date": "2025-03-30",
-            "desc": "Gurgaddi Gurpurab Sri Guru Amardas ji (17 Chet 557) - Marks the day Sri Guru Amardas Ji became the third Guru of the Sikhs, continuing the spiritual lineage."
+            "name": "Panchami, Jyoti jyot Gurpurab Sri Guru Harigobind ji",
+            "date": "2026-03-23",
+            "desc": "Panchami, Jyoti jyot Gurpurab Sri Guru Harigobind ji (10 Chet 558)",
+            "descHindi": "पंचमी, ज्योति ज्योत गुरुपुरब श्री गुरु हरिगोबिंद जी (१० चेत ५५८)",
+            "descPunjabi": "ਪੰਚਮੀ, ਜੋਤੀ ਜੋਤਿ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਹਰਿਗੋਬਿੰਦ ਜੀ (੧੦ ਚੇਤ ੫੫੮)"
         },
         {
             "id": 25,
-            "name": "Jyoti Jot Sri Guru Angad Dev Ji",
-            "date": "2025-04-01",
-            "desc": "Jyoti jyot Gurpurab Sri Guru Angad Dev ji (19 Chet 557) - Observes the day Sri Guru Angad Dev Ji, the second Guru of the Sikhs, departed from this world."
+            "name": "Dashmi",
+            "date": "2026-03-28",
+            "desc": "Dashmi (15 Chet 558)",
+            "descHindi": "दशमी (१५ चेत ५५८)",
+            "descPunjabi": "ਦਸ਼ਮੀ (੧੫ ਚੇਤ ੫੫੮)"
         },
         {
             "id": 26,
-            "name": "Shaheedi Sri Guru Harigobind Ji",
-            "date": "2025-04-02",
-            "desc": "Panchami, Jyoti jyot Gurpurab Sri Guru Harigobind ji (20 Chet 557) - Commemorates the day Sri Guru Harigobind Ji, the sixth Guru of the Sikhs, left this world, and is observed on Panchami."
+            "name": "Gurgaddi Gurpurab Sri Guru Teg Bahadur ji",
+            "date": "2026-03-31",
+            "desc": "Gurgaddi Gurpurab Sri Guru Teg Bahadur ji (18 Chet 558)",
+            "descHindi": "गुरुगद्दी गुरुपुरब श्री गुरु तेग बहादुर जी (१८ चेत ५५८)",
+            "descPunjabi": "ਗੁਰਗੱਦੀ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ (੧੮ ਚੇਤ ੫੫੮)"
         },
         {
             "id": 27,
-            "name": "Dashmi",
-            "date": "2025-04-07",
-            "desc": "Dashmi (25 Chet 557) - A day in the lunar calendar observed by Sikhs."
+            "name": "Jyoti jyot Gurpurab Sri Guru Harikrishan ji",
+            "date": "2026-04-01",
+            "desc": "Jyoti jyot Gurpurab Sri Guru Harikrishan ji (19 Chet 558)",
+            "descHindi": "ज्योति ज्योत गुरुपुरब श्री गुरु हरिकृष्ण जी (१९ चेत ५५८)",
+            "descPunjabi": "ਜੋਤੀ ਜੋਤਿ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਹਰਿਕ੍ਰਿਸ਼ਨ ਜੀ (੧੯ ਚੇਤ ੫੫੮)"
         },
         {
             "id": 28,
-            "name": "Sahibzada Jujhar Singh Birthday",
-            "date": "2025-04-09",
-            "desc": "Birthday Sahibzada Jujhar Singh ji (27 Chet 557) - Celebrates the birth anniversary of Sahibzada Jujhar Singh Ji, the second son of Guru Gobind Singh Ji, known for his valor and sacrifice at the Battle of Chamkaur."
+            "name": "Puranmashi",
+            "date": "2026-04-02",
+            "desc": "Puranmashi (20 Chet 558)",
+            "descHindi": "पूर्णिमा (२० चेत ५५८)",
+            "descPunjabi": "ਪੂਰਨਮਾਸ਼ੀ (੨੦ ਚੇਤ ੫੫੮)"
         },
         {
             "id": 29,
-            "name": "Gurgaddi Sri Guru Tegh Bahadur Ji",
-            "date": "2025-04-11",
-            "desc": "Gurgaddi Gurpurab Sri Guru Teg Bahadur ji, Jyoti jyot Gurpurab Sri Guru Harikrishan Sahib ji (29 Chet 557) - Marks the day Sri Guru Tegh Bahadur Ji assumed the Guruship and the day Sri Guru Harikrishan Sahib Ji departed from this world, remembered for his wisdom and compassion at a young age."
+            "name": "Prakash Gurpurab Sri Guru Teg Bahadur ji",
+            "date": "2026-04-07",
+            "desc": "Prakash Gurpurab Sri Guru Teg Bahadur ji (25 Chet 558)",
+            "descHindi": "प्रकाश गुरुपुरब श्री गुरु तेग बहादुर जी (२५ चेत ५५८)",
+            "descPunjabi": "ਪ੍ਰਕਾਸ਼ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ (੨੫ ਚੇਤ ੫੫੮)"
         },
         {
             "id": 30,
-            "name": "Puranmashi",
-            "date": "2025-04-12",
-            "desc": "Puranmashi (30 Chet 557) - The full moon day in the lunar calendar, observed by Sikhs."
+            "name": "Prakash Gurpurab Sri Guru Arjan Dev ji",
+            "date": "2026-04-09",
+            "desc": "Prakash Gurpurab Sri Guru Arjan Dev ji (27 Chet 558)",
+            "descHindi": "प्रकाश गुरुपुरब श्री गुरु अर्जन देव जी (२७ चेत ५५८)",
+            "descPunjabi": "ਪ੍ਰਕਾਸ਼ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਅਰਜਨ ਦੇਵ ਜੀ (੨੭ ਚੇਤ ੫੫੮)"
         },
         {
             "id": 31,
-            "name": "Sangrand (Vaisakh), Vaisakhi",
-            "date": "2025-04-13",
-            "desc": "Vaisakhi (Baisakhi), Khalsa Foundation Day, Sikh Turban Day (01 Vaisakh 557) - The blessed day when Guru Gobind Singh Ji established the Khalsa Panth in 1699 at Sri Anandpur Sahib. The Guru created the order of the Khalsa through the sacred ceremony of Amrit Sanchar, blessing the Panj Pyare (Five Beloved Ones) who exemplified courage and dedication. This day marks the birth of the Khalsa tradition and celebrates the distinct identity of the Sikhs through the Five Ks (Kesh, Kangha, Kara, Kachera, and Kirpan). It also coincides with Sikh Turban Day, celebrating the significance of the turban in Sikh culture."
+            "name": "Sangrand",
+            "date": "2026-04-14",
+            "desc": "Sangrand (Vaisakh) (01 Vaisakh 558)",
+            "descHindi": "संक्रांति (वैसाख) (०१ वैसाख ५५८)",
+            "descPunjabi": "ਸੰਗਰਾਂਦ (ਵੈਸਾਖ) (੦੧ ਵੈਸਾਖ ੫੫੮)"
         },
         {
             "id": 32,
-            "name": "Prakash Gurpurab Sri Guru Tegh Bahadur Ji",
-            "date": "2025-04-18",
-            "desc": "Prakash Gurpurab Sri Guru Teg Bahadur ji (06 Vaisakh 557) - Celebrates the birth anniversary of Sri Guru Tegh Bahadur Ji, the ninth Guru of the Sikhs, revered for his sacrifice in defending religious freedom."
+            "name": "Masya",
+            "date": "2026-04-17",
+            "desc": "Masya (04 Vaisakh 558)",
+            "descHindi": "अमावस्या (०४ वैसाख ५५८)",
+            "descPunjabi": "ਮੱਸਿਆ (੦੪ ਵੈਸਾਖ ੫੫੮)"
         },
         {
             "id": 33,
-            "name": "Prakash Gurpurab Sri Guru Arjan Dev Ji",
-            "date": "2025-04-20",
-            "desc": "Prakash Gurpurab Sri Guru Arjan Dev ji, Birthday Bhagat Dhanna ji (08 Vaisakh 557) - Celebrates the birth anniversary of Sri Guru Arjan Dev Ji, the fifth Guru of the Sikhs, and the birthday of Bhagat Dhanna Ji, a devotee whose hymns are included in the Sri Guru Granth Sahib."
+            "name": "Prakash Gurpurab Sri Guru Angad Dev ji",
+            "date": "2026-04-18",
+            "desc": "Prakash Gurpurab Sri Guru Angad Dev ji (05 Vaisakh 558)",
+            "descHindi": "प्रकाश गुरुपुरब श्री गुरु अंगद देव जी (०५ वैसाख ५५८)",
+            "descPunjabi": "ਪ੍ਰਕਾਸ਼ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ (੦੫ ਵੈਸਾਖ ੫੫੮)"
         },
         {
             "id": 34,
-            "name": "Masya",
-            "date": "2025-04-27",
-            "desc": "Masya (15 Vaisakh 557) - The new moon day in the lunar calendar, observed by Sikhs."
+            "name": "Panchami",
+            "date": "2026-04-21",
+            "desc": "Panchami (08 Vaisakh 558)",
+            "descHindi": "पंचमी (०८ वैसाख ५५८)",
+            "descPunjabi": "ਪੰਚਮੀ (੦੮ ਵੈਸਾਖ ੫੫੮)"
         },
         {
             "id": 35,
-            "name": "Panchami",
-            "date": "2025-05-02",
-            "desc": "Panchami (20 Vaisakh 557) - A day in the lunar calendar observed by Sikhs."
+            "name": "Dashmi",
+            "date": "2026-04-26",
+            "desc": "Dashmi (13 Vaisakh 558)",
+            "descHindi": "दशमी (१३ वैसाख ५५८)",
+            "descPunjabi": "ਦਸ਼ਮੀ (੧੩ ਵੈਸਾਖ ੫੫੮)"
         },
         {
             "id": 36,
-            "name": "Shaheedi Jor Mela Sri Muktsar Sahib",
-            "date": "2025-05-03",
-            "desc": "Shaheedi Jor Mela Sri Muktsar Sahib (21 Vaisakh 557) - Commemorates the martyrdom of the Chali Mukte (Forty Liberated Ones) who sacrificed their lives for Guru Gobind Singh Ji, a significant event in Sikh history."
+            "name": "Prakash Gurpurab Sri Guru Amardas ji",
+            "date": "2026-04-30",
+            "desc": "Prakash Gurpurab Sri Guru Amardas ji (17 Vaisakh 558)",
+            "descHindi": "प्रकाश गुरुपुरब श्री गुरु अमरदास जी (१७ वैसाख ५५८)",
+            "descPunjabi": "ਪ੍ਰਕਾਸ਼ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਅਮਰਦਾਸ ਜੀ (੧੭ ਵੈਸਾਖ ੫੫੮)"
         },
         {
             "id": 37,
-            "name": "Sardar Jassa Singh Ramgarhia Birthday",
-            "date": "2025-05-05",
-            "desc": "Birthday Sardar Jassa Singh ji Ramgarhia (23 Vaisakh 557) - Celebrates the birth anniversary of Sardar Jassa Singh Ramgarhia, a prominent Sikh leader and warrior known for his contributions to Sikh military power."
+            "name": "Puranmashi",
+            "date": "2026-05-01",
+            "desc": "Puranmashi (18 Vaisakh 558)",
+            "descHindi": "पूर्णिमा (१८ वैसाख ५५८)",
+            "descPunjabi": "ਪੂਰਨਮਾਸ਼ੀ (੧੮ ਵੈਸਾਖ ੫੫੮)"
         },
         {
             "id": 38,
-            "name": "Dashmi",
-            "date": "2025-05-07",
-            "desc": "Dashmi (25 Vaisakh 557) - A day in the lunar calendar observed by Sikhs."
+            "name": "Gurgaddi Gurpurab Sri Guru Harigobind ji",
+            "date": "2026-05-10",
+            "desc": "Gurgaddi Gurpurab Sri Guru Harigobind ji (27 Vaisakh 558)",
+            "descHindi": "गुरुगद्दी गुरुपुरब श्री गुरु हरिगोबिंद जी (२७ वैसाख ५५८)",
+            "descPunjabi": "ਗੁਰਗੱਦੀ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਹਰਿਗੋਬਿੰਦ ਜੀ (੨੭ ਵੈਸਾਖ ੫੫੮)"
         },
         {
             "id": 39,
-            "name": "Prakash Gurpurab Sri Guru Amardas Ji",
-            "date": "2025-05-11",
-            "desc": "Prakash Gurpurab Sri Guru Amardas ji (29 Vaisakh 557) - Celebrates the birth anniversary of Sri Guru Amardas Ji, the third Guru of the Sikhs, known for his emphasis on equality and community service."
+            "name": "Sangrand",
+            "date": "2026-05-15",
+            "desc": "Sangrand (Jeth) (01 Jeth 558)",
+            "descHindi": "संक्रांति (जेठ) (०१ जेठ ५५८)",
+            "descPunjabi": "ਸੰਗਰਾਂਦ (ਜੇਠ) (੦੧ ਜੇਠ ੫੫੮)"
         },
         {
             "id": 40,
-            "name": "Baba Banda Singh Bahadar Fateh Divas",
-            "date": "2025-05-12",
-            "desc": "Puranmashi, Baba Banda Singh Bahadar : Sirhind Fateh Divas (30 Vaisakh 557) - Commemorates the victory of Baba Banda Singh Bahadur over Sirhind, a significant event in Sikh history marking the establishment of Sikh rule in the region."
+            "name": "Masya",
+            "date": "2026-05-16",
+            "desc": "Masya (02 Jeth 558)",
+            "descHindi": "अमावस्या (०२ जेठ ५५८)",
+            "descPunjabi": "ਮੱਸਿਆ (੦੨ ਜੇਠ ੫੫੮)"
         },
         {
             "id": 41,
-            "name": "Sangrand (Jeth)",
-            "date": "2025-05-14",
-            "desc": "Sangrand (Jeth) (01 Jeth 557) - The first day of the month of Jeth in the Nanakshahi calendar."
+            "name": "Panchami",
+            "date": "2026-05-21",
+            "desc": "Panchami (07 Jeth 558)",
+            "descHindi": "पंचमी (०७ जेठ ५५८)",
+            "descPunjabi": "ਪੰਚਮੀ (੦੭ ਜੇਠ ੫੫੮)"
         },
         {
             "id": 42,
-            "name": "Chhota Ghallughara",
-            "date": "2025-05-16",
-            "desc": "Chhota Ghallughara Kahnuwan (Gurdaspur) (03 Jeth 557) - Remembers the 'Lesser Holocaust' of 1746, where a large number of Sikhs were massacred near Kahnuwan, a significant event in Sikh history."
+            "name": "Dashmi",
+            "date": "2026-05-25",
+            "desc": "Dashmi (11 Jeth 558)",
+            "descHindi": "दशमी (११ जेठ ५५८)",
+            "descPunjabi": "ਦਸ਼ਮੀ (੧੧ ਜੇਠ ੫੫੮)"
         },
         {
             "id": 43,
-            "name": "Sardar Jassa Singh Ahluwalia Birthday",
-            "date": "2025-05-18",
-            "desc": "Birthday Sardar Jassa Singh Ahluwalia (05 Jeth 557) - Celebrates the birth anniversary of Sardar Jassa Singh Ahluwalia, a prominent Sikh leader and warrior known for his role in the Sikh Confederacy."
+            "name": "Puranmashi",
+            "date": "2026-05-31",
+            "desc": "Puranmashi (17 Jeth 558)",
+            "descHindi": "पूर्णिमा (१७ जेठ ५५८)",
+            "descPunjabi": "ਪੂਰਨਮਾਸ਼ੀ (੧੭ ਜੇਠ ੫੫੮)"
         },
         {
             "id": 44,
-            "name": "Gurgaddi Sri Guru Harigobind Ji",
-            "date": "2025-05-20",
-            "desc": "Gurgaddi Gurpurab Sri Guru Harigobind ji (07 Jeth 557) - Marks the day Sri Guru Harigobind Ji became the sixth Guru of the Sikhs, known for his emphasis on both spiritual and martial strength (Miri and Piri)."
+            "name": "Sangrand",
+            "date": "2026-06-15",
+            "desc": "Sangrand (Harh), Masya (01 Harh 558)",
+            "descHindi": "संक्रांति (हाड़), अमावस्या (०१ हाड़ ५५८)",
+            "descPunjabi": "ਸੰਗਰਾਂਦ (ਹਾੜ), ਮੱਸਿਆ (੦੧ ਹਾੜ ੫੫੮)"
         },
         {
             "id": 45,
-            "name": "Shaheedi Saka Paonta Sahib",
-            "date": "2025-05-22",
-            "desc": "Shaheedi Saka Paonta Sahib (09 Jeth 557) - Commemorates the martyrdoms that occurred during the battle of Paonta Sahib, where Guru Gobind Singh Ji and his Sikhs fought against the combined forces of local hill chiefs."
+            "name": "Shaheedi Gurpurab Sri Guru Arjan Dev ji",
+            "date": "2026-06-18",
+            "desc": "Shaheedi Gurpurab Sri Guru Arjan Dev ji (04 Harh 558)",
+            "descHindi": "शहीदी गुरुपुरब श्री गुरु अर्जन देव जी (०४ हाड़ ५५८)",
+            "descPunjabi": "ਸ਼ਹੀਦੀ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਅਰਜਨ ਦੇਵ ਜੀ (੦੪ ਹਾੜ ੫੫੮)"
         },
         {
             "id": 46,
-            "name": "Masya",
-            "date": "2025-05-27",
-            "desc": "Masya (14 Jeth 557) - The new moon day in the lunar calendar, observed by Sikhs."
+            "name": "Panchami",
+            "date": "2026-06-19",
+            "desc": "Panchami (05 Harh 558)",
+            "descHindi": "पंचमी (०५ हाड़ ५५८)",
+            "descPunjabi": "ਪੰਚਮੀ (੦੫ ਹਾੜ ੫੫੮)"
         },
         {
             "id": 47,
-            "name": "Shaheedi Sri Guru Arjan Dev Ji",
-            "date": "2025-05-30",
-            "desc": "Shaheedi Gurpurab Sri Guru Arjan Dev ji (17 Jeth 557) - Commemorates the martyrdom of the fifth Guru who was martyred in 1606 in Lahore. Guru Arjan Dev Ji compiled the Adi Granth (Sri Guru Granth Sahib), built Sri Harmandir Sahib, and upheld truth and justice even in the face of extreme persecution. His martyrdom represents the Sikh principle of standing firm for one's beliefs and accepting God's will with grace."
+            "name": "Dashmi",
+            "date": "2026-06-24",
+            "desc": "Dashmi (10 Harh 558)",
+            "descHindi": "दशमी (१० हाड़ ५५८)",
+            "descPunjabi": "ਦਸ਼ਮੀ (੧੦ ਹਾੜ ੫੫੮)"
         },
         {
             "id": 48,
-            "name": "Panchami",
-            "date": "2025-05-31",
-            "desc": "Panchami (18 Jeth 557) - A day in the lunar calendar observed by Sikhs."
+            "name": "Puranmashi",
+            "date": "2026-06-29",
+            "desc": "Puranmashi (15 Harh 558)",
+            "descHindi": "पूर्णिमा (१५ हाड़ ५५८)",
+            "descPunjabi": "ਪੂਰਨਮਾਸ਼ੀ (੧੫ ਹਾੜ ੫੫੮)"
         },
         {
             "id": 49,
-            "name": "Sant Jarnail Singh Bhindranwale Birthday",
-            "date": "2025-06-02",
-            "desc": "Birthday Sant Jarnail Singh ji Khalsa Bhindranwale (20 Jeth 557) - Celebrates the birth anniversary of Sant Jarnail Singh Ji Khalsa Bhindranwale, a controversial figure in Sikh history."
+            "name": "Prakash Gurpurab Sri Guru Harigobind ji",
+            "date": "2026-06-30",
+            "desc": "Prakash Gurpurab Sri Guru Harigobind ji (16 Harh 558)",
+            "descHindi": "प्रकाश गुरुपुरब श्री गुरु हरिगोबिंद जी (१६ हाड़ ५५८)",
+            "descPunjabi": "ਪ੍ਰਕਾਸ਼ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਹਰਿਗੋਬਿੰਦ ਜੀ (੧੬ ਹਾੜ ੫੫੮)"
         },
         {
             "id": 50,
-            "name": "Operation Blue Star",
-            "date": "2025-06-04",
-            "desc": "Ghallughara Sri Akal Takht Sahib (1984) (22 Jeth 557) - A controversial military operation carried out by the Indian government at Sri Akal Takht Sahib in Amritsar in 1984, a deeply sensitive event in Sikh history."
+            "name": "Masya",
+            "date": "2026-07-14",
+            "desc": "Masya (30 Harh 558)",
+            "descHindi": "अमावस्या (३० हाड़ ५५८)",
+            "descPunjabi": "ਮੱਸਿਆ (੩੦ ਹਾੜ ੫੫੮)"
         },
         {
             "id": 51,
-            "name": "Dashmi",
-            "date": "2025-06-05",
-            "desc": "Dashmi (23 Jeth 557) - A day in the lunar calendar observed by Sikhs."
+            "name": "Sangrand",
+            "date": "2026-07-16",
+            "desc": "Sangrand (Sawan) (01 Sawan 558)",
+            "descHindi": "संक्रांति (सावन) (०१ सावन ५५८)",
+            "descPunjabi": "ਸੰਗਰਾਂਦ (ਸਾਵਣ) (੦੧ ਸਾਵਣ ੫੫੮)"
         },
         {
             "id": 52,
-            "name": "Shaheedi Sant Jarnail Singh Bhindranwale",
-            "date": "2025-06-06",
-            "desc": "Shaheedi Diwas Sant Jarnail Singh ji Khalsa Bhindranwale, Shaheedi Diwas Bhai Amreek Singh ji (24 Jeth 557) - Commemorates the death anniversary of Sant Jarnail Singh Ji Khalsa Bhindranwale and Bhai Amreek Singh Ji during Operation Blue Star."
+            "name": "Panchami",
+            "date": "2026-07-18",
+            "desc": "Panchami (03 Sawan 558)",
+            "descHindi": "पंचमी (०३ सावन ५५८)",
+            "descPunjabi": "ਪੰਚਮੀ (੦੩ ਸਾਵਣ ੫੫੮)"
         },
         {
             "id": 53,
-            "name": "Bhagat Kabir Birthday",
-            "date": "2025-06-11",
-            "desc": "Puranmashi, Birthday Bhagat Kabir ji, Jor Mela Gurudwara Sri Reetha Sahib (29 Jeth 557) - Celebrates the birth anniversary of Bhagat Kabir Ji, a revered saint and poet whose hymns are included in the Sri Guru Granth Sahib, and Jor Mela at Gurudwara Sri Reetha Sahib."
+            "name": "Dashmi, Miri Piri Divas",
+            "date": "2026-07-24",
+            "desc": "Dashmi, Miri Piri Divas (Sri Guru Harigobind ji) (09 Sawan 558)",
+            "descHindi": "दशमी, मीरी-पीरी दिवस (श्री गुरु हरिगोबिंद जी) (०९ सावन ५५८)",
+            "descPunjabi": "ਦਸ਼ਮੀ, ਮੀਰੀ-ਪੀਰੀ ਦਿਵਸ (ਸ੍ਰੀ ਗੁਰੂ ਹਰਿਗੋਬਿੰਦ ਜੀ) (੦੯ ਸਾਵਣ ੫੫੮)"
         },
         {
             "id": 54,
-            "name": "Prakash Gurpurab Sri Guru Harigobind Ji",
-            "date": "2025-06-12",
-            "desc": "Prakash Gurpurab Sri Guru Harigobind ji (30 Jeth 557) - Celebrates the birth anniversary of Sri Guru Harigobind Ji, the sixth Guru of the Sikhs, known for his emphasis on both spiritual and martial strength (Miri and Piri)."
+            "name": "Puranmashi",
+            "date": "2026-07-29",
+            "desc": "Puranmashi (14 Sawan 558)",
+            "descHindi": "पूर्णिमा (१४ सावन ५५८)",
+            "descPunjabi": "ਪੂਰਨਮਾਸ਼ੀ (੧੪ ਸਾਵਣ ੫੫੮)"
         },
         {
             "id": 55,
-            "name": "Sangrand (Harh)",
-            "date": "2025-06-15",
-            "desc": "Sangrand (Harh) (01 Harh 557) - The first day of the month of Harh in the Nanakshahi calendar."
+            "name": "Prakash Gurpurab Sri Guru Harikrishan ji",
+            "date": "2026-08-07",
+            "desc": "Prakash Gurpurab Sri Guru Harikrishan ji (23 Sawan 558)",
+            "descHindi": "प्रकाश गुरुपुरब श्री गुरु हरिकृष्ण जी (२३ सावन ५५८)",
+            "descPunjabi": "ਪ੍ਰਕਾਸ਼ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਹਰਿਕ੍ਰਿਸ਼ਨ ਜੀ (੨੩ ਸਾਵਣ ੫੫੮)"
         },
         {
             "id": 56,
-            "name": "Sri Akal Takht Foundation Day",
-            "date": "2025-06-16",
-            "desc": "Sri Akal Takht Sahib Foundation Day (02 Harh 557) - Commemorates the establishment of Sri Akal Takht Sahib by Sri Guru Hargobind Ji in 1606, symbolizing temporal authority and justice."
+            "name": "Masya",
+            "date": "2026-08-12",
+            "desc": "Masya (28 Sawan 558)",
+            "descHindi": "अमावस्या (२८ सावन ५५८)",
+            "descPunjabi": "ਮੱਸਿਆ (੨੮ ਸਾਵਣ ੫੫੮)"
         },
         {
             "id": 57,
-            "name": "Shaheedi Baba Banda Singh Bahadur",
-            "date": "2025-06-25",
-            "desc": "Masya, Shaheedi Diwas Baba Banda Singh ji Bahadur (11 Harh 557) - Commemorates the martyrdom of Baba Banda Singh Bahadur, a prominent Sikh warrior who fought against Mughal rule in the early 18th century."
+            "name": "Sangrand",
+            "date": "2026-08-17",
+            "desc": "Sangrand (Bhadon), Panchami (01 Bhadon 558)",
+            "descHindi": "संक्रांति (भादों), पंचमी (०१ भादों ५५८)",
+            "descPunjabi": "ਸੰਗਰਾਂਦ (ਭਾਦੋਂ), ਪੰਚਮੀ (੦੧ ਭਾਦੋਂ ੫੫੮)"
         },
         {
             "id": 58,
-            "name": "Maharaja Ranjit Singh Barsi",
-            "date": "2025-06-29",
-            "desc": "Barsi Maharaja Ranjeet Singh ji (15 Harh 557) - Observes the death anniversary of Maharaja Ranjit Singh, the founder and ruler of the Sikh Empire, remembered for his just rule and patronage of the arts and culture."
+            "name": "Dashmi",
+            "date": "2026-08-22",
+            "desc": "Dashmi (06 Bhadon 558)",
+            "descHindi": "दशमी (०६ भादों ५५८)",
+            "descPunjabi": "ਦਸ਼ਮੀ (੦੬ ਭਾਦੋਂ ੫੫੮)"
         },
         {
             "id": 59,
-            "name": "Panchami",
-            "date": "2025-06-30",
-            "desc": "Panchami (16 Harh 557) - A day in the lunar calendar observed by Sikhs."
+            "name": "Puranmashi",
+            "date": "2026-08-28",
+            "desc": "Puranmashi (12 Bhadon 558)",
+            "descHindi": "पूर्णिमा (१२ भादों ५५८)",
+            "descPunjabi": "ਪੂਰਨਮਾਸ਼ੀ (੧੨ ਭਾਦੋਂ ੫੫੮)"
         },
         {
             "id": 60,
-            "name": "Miri Piri Diwas",
-            "date": "2025-07-05",
-            "desc": "Dashmi, Miri Piri Divas (Sri Guru Harigobind ji) (21 Harh 557) - Celebrates the concept of Miri and Piri (temporal and spiritual authority) as embodied by Sri Guru Harigobind Ji."
+            "name": "Masya",
+            "date": "2026-09-11",
+            "desc": "Masya (26 Bhadon 558)",
+            "descHindi": "अमावस्या (२६ भादों ५५८)",
+            "descPunjabi": "ਮੱਸਿਆ (੨੬ ਭਾਦੋਂ ੫੫੮)"
         },
         {
             "id": 61,
-            "name": "Shaheedi Bhai Mani Singh",
-            "date": "2025-07-09",
-            "desc": "Shaheedi Diwas Bhai Mani Singh ji (25 Harh 557) - Commemorates the martyrdom of Bhai Mani Singh Ji, a revered Sikh scholar and scribe who contributed significantly to the compilation of Sikh scriptures."
+            "name": "Pehla Prakash Gurpurab Sri Guru Granth Sahib ji",
+            "date": "2026-09-12",
+            "desc": "Pehla Prakash Gurpurab Sri Guru Granth Sahib ji (27 Bhadon 558)",
+            "descHindi": "पहला प्रकाश गुरुपुरब श्री गुरु ग्रंथ साहिब जी (२७ भादों ५५८)",
+            "descPunjabi": "ਪਹਿਲਾ ਪ੍ਰਕਾਸ਼ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ (੨੭ ਭਾਦੋਂ ੫੫੮)"
         },
         {
             "id": 62,
-            "name": "Puranmashi",
-            "date": "2025-07-10",
-            "desc": "Puranmashi (26 Harh 557) - The full moon day in the lunar calendar, observed by Sikhs."
+            "name": "Gurgaddi Gurpurab Sri Guru Arjan Dev ji",
+            "date": "2026-09-13",
+            "desc": "Gurgaddi Gurpurab Sri Guru Arjan Dev ji (28 Bhadon 558)",
+            "descHindi": "गुरुगद्दी गुरुपुरब श्री गुरु अर्जन देव जी (२८ भादों ५५८)",
+            "descPunjabi": "ਗੁਰਗੱਦੀ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਅਰਜਨ ਦੇਵ ਜੀ (੨੮ ਭਾਦੋਂ ੫੫੮)"
         },
         {
             "id": 63,
-            "name": "Sangrand (Sawan), Shaheedi Bhai Taru Singh",
-            "date": "2025-07-16",
-            "desc": "Shaheedi Diwas Bhai Taru Singh ji (01 Sawan 557) - Commemorates the martyrdom of Bhai Taru Singh Ji, known for his unwavering faith and sacrifice in the face of persecution."
+            "name": "Jyoti jyot Gurpurab Sri Guru Ramdas ji",
+            "date": "2026-09-14",
+            "desc": "Jyoti jyot Gurpurab Sri Guru Ramdas ji (29 Bhadon 558)",
+            "descHindi": "ज्योति ज्योत गुरुपुरब श्री गुरु रामदास जी (२९ भादों ५५८)",
+            "descPunjabi": "ਜੋਤੀ ਜੋਤਿ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਰਾਮਦਾਸ ਜੀ (੨੯ ਭਾਦੋਂ ੫੫੮)"
         },
         {
             "id": 64,
-            "name": "Prakash Gurpurab Sri Guru Harkishan Ji",
-            "date": "2025-07-19",
-            "desc": "Prakash Gurpurab Sri Guru Harikrishan ji (04 Sawan 557) - Celebrates the birth anniversary of Sri Guru Harikrishan Ji, the eighth Guru of the Sikhs, known for his compassion and healing powers."
+            "name": "Panchami",
+            "date": "2026-09-16",
+            "desc": "Panchami (31 Bhadon 558)",
+            "descHindi": "पंचमी (३१ भादों ५५८)",
+            "descPunjabi": "ਪੰਚਮੀ (੩੧ ਭਾਦੋਂ ੫੫੮)"
         },
         {
             "id": 65,
-            "name": "Masya",
-            "date": "2025-07-24",
-            "desc": "Masya (09 Sawan 557) - The new moon day in the lunar calendar, observed by Sikhs."
+            "name": "Sangrand",
+            "date": "2026-09-17",
+            "desc": "Sangrand (Assu) (01 Assu 558)",
+            "descHindi": "संक्रांति (अस्सू) (०१ अस्सू ५५८)",
+            "descPunjabi": "ਸੰਗਰਾਂਦ (ਅੱਸੂ) (੦੧ ਅੱਸੂ ੫੫੮)"
         },
         {
             "id": 66,
-            "name": "Panchami",
-            "date": "2025-07-29",
-            "desc": "Panchami (14 Sawan 557) - A day in the lunar calendar observed by Sikhs."
+            "name": "Dashmi",
+            "date": "2026-09-21",
+            "desc": "Dashmi (05 Assu 558)",
+            "descHindi": "दशमी (०५ अस्सू ५५८)",
+            "descPunjabi": "ਦਸ਼ਮੀ (੦੫ ਅੱਸੂ ੫੫੮)"
         },
         {
             "id": 67,
-            "name": "Shaheed Udham Singh Day",
-            "date": "2025-07-31",
-            "desc": "Shaheedi Diwas S. Udham Singh ji (16 Sawan 557) - A day to remember and honor Shaheed Udham Singh, a revolutionary freedom fighter who assassinated Michael O'Dwyer to avenge the Jallianwala Bagh massacre."
+            "name": "Gurgaddi Gurpurab Sri Guru Ramdas ji",
+            "date": "2026-09-24",
+            "desc": "Gurgaddi Gurpurab Sri Guru Ramdas ji (08 Assu 558)",
+            "descHindi": "गुरुगद्दी गुरुपुरब श्री गुरु रामदास जी (०८ अस्सू ५५८)",
+            "descPunjabi": "ਗੁਰਗੱਦੀ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਰਾਮਦਾਸ ਜੀ (੦੮ ਅੱਸੂ ੫੫੮)"
         },
         {
             "id": 68,
-            "name": "Dashmi",
-            "date": "2025-08-04",
-            "desc": "Dashmi (20 Sawan 557) - A day in the lunar calendar observed by Sikhs."
+            "name": "Puranmashi, Jyoti jyot Gurpurab Sri Guru Amardas ji",
+            "date": "2026-09-26",
+            "desc": "Puranmashi, Jyoti jyot Gurpurab Sri Guru Amardas ji (10 Assu 558)",
+            "descHindi": "पूर्णिमा, ज्योति ज्योत गुरुपुरब श्री गुरु अमरदास जी (१० अस्सू ५५८)",
+            "descPunjabi": "ਪੂਰਨਮਾਸ਼ੀ, ਜੋਤੀ ਜੋਤਿ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਅਮਰਦਾਸ ਜੀ (੧੦ ਅੱਸੂ ੫੫੮)"
         },
         {
             "id": 69,
-            "name": "Guru Ka Bagh Morcha",
-            "date": "2025-08-08",
-            "desc": "Morcha Guru Ka Baag (Sri Amritsar) (24 Sawan 557) - Commemorates the peaceful protest against the British government's interference in the management of Gurudwara Guru Ka Bagh, showcasing Sikh resilience and commitment to non-violent resistance."
+            "name": "Gurgaddi Gurpurab Sri Guru Angad Dev ji",
+            "date": "2026-10-01",
+            "desc": "Gurgaddi Gurpurab Sri Guru Angad Dev ji (15 Assu 558)",
+            "descHindi": "गुरुगद्दी गुरुपुरब श्री गुरु अंगद देव जी (१५ अस्सू ५५८)",
+            "descPunjabi": "ਗੁਰਗੱਦੀ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ (੧੫ ਅੱਸੂ ੫੫੮)"
         },
         {
             "id": 70,
-            "name": "Baba Bakala Mela",
-            "date": "2025-08-09",
-            "desc": "Puranmashi, Jor Mela Baba Bakala (25 Sawan 557) - Celebrates the discovery of Guru Tegh Bahadur Ji as the ninth Guru at Baba Bakala, marked by a large gathering and festivities."
+            "name": "Jyoti jyot Gurpurab Sri Guru Nanak Dev ji",
+            "date": "2026-10-05",
+            "desc": "Jyoti jyot Gurpurab Sri Guru Nanak Dev ji (19 Assu 558)",
+            "descHindi": "ज्योति ज्योत गुरुपुरब श्री गुरु नानक देव जी (१९ अस्सू ५५८)",
+            "descPunjabi": "ਜੋਤੀ ਜੋਤਿ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ (੧੯ ਅੱਸੂ ੫੫੮)"
         },
         {
             "id": 71,
-            "name": "Sangrand (Bhadon)",
-            "date": "2025-08-16",
-            "desc": "Sangrand (Bhadon) (01 Bhadon 557) - The first day of the month of Bhadon in the Nanakshahi calendar."
+            "name": "Masya",
+            "date": "2026-10-10",
+            "desc": "Masya (24 Assu 558)",
+            "descHindi": "अमावस्या (२४ अस्सू ५५८)",
+            "descPunjabi": "ਮੱਸਿਆ (੨੪ ਅੱਸੂ ੫੫੮)"
         },
         {
             "id": 72,
-            "name": "Shaheedi Sant Harchand Singh Longowal",
-            "date": "2025-08-20",
-            "desc": "Shaheedi Diwas Sant Harchand Singh ji Longowal (05 Bhadon 557) - Commemorates the death anniversary of Sant Harchand Singh Longowal, a prominent Sikh leader who played a key role in the Punjab Accord."
+            "name": "Panchami",
+            "date": "2026-10-15",
+            "desc": "Panchami (29 Assu 558)",
+            "descHindi": "पंचमी (२९ अस्सू ५५८)",
+            "descPunjabi": "ਪੰਚਮੀ (੨੯ ਅੱਸੂ ੫੫੮)"
         },
         {
             "id": 73,
-            "name": "Masya",
-            "date": "2025-08-23",
-            "desc": "Masya (08 Bhadon 557) - The new moon day in the lunar calendar, observed by Sikhs."
+            "name": "Sangrand",
+            "date": "2026-10-17",
+            "desc": "Sangrand (Katak) (01 Katak 558)",
+            "descHindi": "संक्रांति (कत्तक) (०१ कत्तक ५५८)",
+            "descPunjabi": "ਸੰਗਰਾਂਦ (ਕੱਤਕ) (੦੧ ਕੱਤਕ ੫੫੮)"
         },
         {
             "id": 74,
-            "name": "First Parkash Sri Guru Granth Sahib Ji",
-            "date": "2025-08-24",
-            "desc": "Pehla Prakash Gurpurab Sri Guru Granth Sahib ji (09 Bhadon 557) - Celebrates the first installation of the Sri Guru Granth Sahib at Sri Harmandir Sahib, marking its significance as the eternal Guru of the Sikhs."
+            "name": "Dashmi",
+            "date": "2026-10-21",
+            "desc": "Dashmi (05 Katak 558)",
+            "descHindi": "दशमी (०५ कत्तक ५५८)",
+            "descPunjabi": "ਦਸ਼ਮੀ (੦੫ ਕੱਤਕ ੫੫੮)"
         },
         {
             "id": 75,
-            "name": "Gurgaddi Sri Guru Arjan Dev Ji",
-            "date": "2025-08-25",
-            "desc": "Gurgaddi Gurpurab Sri Guru Arjan Dev ji (10 Bhadon 557) - Marks the day Sri Guru Arjan Dev Ji became the fifth Guru of the Sikhs, continuing the spiritual lineage."
+            "name": "Puranmashi",
+            "date": "2026-10-26",
+            "desc": "Puranmashi (10 Katak 558)",
+            "descHindi": "पूर्णिमा (१० कत्तक ५५८)",
+            "descPunjabi": "ਪੂਰਨਮਾਸ਼ੀ (੧੦ ਕੱਤਕ ੫੫੮)"
         },
         {
             "id": 76,
-            "name": "Jyoti Jot Sri Guru Ramdas Ji",
-            "date": "2025-08-26",
-            "desc": "Jyoti jyot Gurpurab Sri Guru Ramdas ji (11 Bhadon 557) - Observes the day Sri Guru Ramdas Ji, the fourth Guru of the Sikhs, departed from this world."
+            "name": "Prakash Gurpurab Sri Guru Ramdas ji",
+            "date": "2026-10-27",
+            "desc": "Prakash Gurpurab Sri Guru Ramdas ji (11 Katak 558)",
+            "descHindi": "प्रकाश गुरुपुरब श्री गुरु रामदास जी (११ कत्तक ५५८)",
+            "descPunjabi": "ਪ੍ਰਕਾਸ਼ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਰਾਮਦਾਸ ਜੀ (੧੧ ਕੱਤਕ ੫੫੮)"
         },
         {
             "id": 77,
-            "name": "Panchami",
-            "date": "2025-08-28",
-            "desc": "Panchami (13 Bhadon 557) - A day in the lunar calendar observed by Sikhs."
+            "name": "Jyoti jyot Gurpurab Sri Guru Harirai ji, Gurgaddi Gurpurab Sri Guru Harikrishan ji",
+            "date": "2026-11-03",
+            "desc": "Jyoti jyot Gurpurab Sri Guru Harirai ji, Gurgaddi Gurpurab Sri Guru Harikrishan ji (18 Katak 558)",
+            "descHindi": "ज्योति ज्योत गुरुपुरब श्री गुरु हरिराय जी, गुरुगद्दी गुरुपुरब श्री गुरु हरिकृष्ण जी (१८ कत्तक ५५८)",
+            "descPunjabi": "ਜੋਤੀ ਜੋਤਿ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਹਰਿਰਾਇ ਜੀ, ਗੁਰਗੱਦੀ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਹਰਿਕ੍ਰਿਸ਼ਨ ਜੀ (੧੮ ਕੱਤਕ ੫੫੮)"
         },
         {
             "id": 78,
-            "name": "Sri Guru Granth Sahib Sampurnta Diwas",
-            "date": "2025-08-29",
-            "desc": "Sampooranta Divas Sri Guru Granth Sahib ji (14 Bhadon 557) - Commemorates the completion of the Sri Guru Granth Sahib, the holy scripture of the Sikhs."
+            "name": "Masya",
+            "date": "2026-11-09",
+            "desc": "Masya (24 Katak 558)",
+            "descHindi": "अमावस्या (२४ कत्तक ५५८)",
+            "descPunjabi": "ਮੱਸਿਆ (੨੪ ਕੱਤਕ ੫੫੮)"
         },
         {
             "id": 79,
-            "name": "Sri Guru Nanak Dev Ji Marriage Day",
-            "date": "2025-08-30",
-            "desc": "Jor Mela Gurudwara Kandh Sahib (Batala), Gurudwara Dehra Sahib : Marriage Day : Sri Guru Nanak Dev ji (Batala) (15 Bhadon 557) - Celebrates the marriage of Sri Guru Nanak Dev Ji, the founder of Sikhism, with festivities held at Gurudwara Kandh Sahib in Batala."
+            "name": "Gurgaddi Gurpurab Sri Guru Granth Sahib ji",
+            "date": "2026-11-11",
+            "desc": "Gurgaddi Gurpurab Sri Guru Granth Sahib ji (26 Katak 558)",
+            "descHindi": "गुरुगद्दी गुरुपुरब श्री गुरु ग्रंथ साहिब जी (२६ कत्तक ५५८)",
+            "descPunjabi": "ਗੁਰਗੱਦੀ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ (੨੬ ਕੱਤਕ ੫੫੮)"
         },
         {
             "id": 80,
-            "name": "Dashmi",
-            "date": "2025-09-02",
-            "desc": "Dashmi (18 Bhadon 557) - A day in the lunar calendar observed by Sikhs."
+            "name": "Panchami, Jyoti jyot Gurpurab Sri Guru Gobind Singh ji",
+            "date": "2026-11-14",
+            "desc": "Panchami, Jyoti jyot Gurpurab Sri Guru Gobind Singh ji (29 Katak 558)",
+            "descHindi": "पंचमी, ज्योति ज्योत गुरुपुरब श्री गुरु गोबिंद सिंह जी (२९ कत्तक ५५८)",
+            "descPunjabi": "ਪੰਚਮੀ, ਜੋਤੀ ਜੋਤਿ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ (੨੯ ਕੱਤਕ ੫੫੮)"
         },
         {
             "id": 81,
-            "name": "Gurgaddi Sri Guru Ramdas Ji",
-            "date": "2025-09-05",
-            "desc": "Gurgaddi Gurpurab Sri Guru Ramdas ji (21 Bhadon 557) - Marks the day Sri Guru Ramdas Ji became the fourth Guru of the Sikhs, known for founding the city of Amritsar."
+            "name": "Sangrand",
+            "date": "2026-11-16",
+            "desc": "Sangrand (Maghar) (01 Maghar 558)",
+            "descHindi": "संक्रांति (मघ्घर) (०१ मघ्घर ५५८)",
+            "descPunjabi": "ਸੰਗਰਾਂਦ (ਮੱਘਰ) (੦੧ ਮੱਘਰ ੫੫੮)"
         },
         {
             "id": 82,
-            "name": "Jyoti Jot Sri Guru Amardas Ji",
-            "date": "2025-09-07",
-            "desc": "Puranmashi, Jyoti jyot Gurpurab Sri Guru Amardas ji, Jor Mela Govindwaal Sahib (23 Bhadon 557) - Observes the day Sri Guru Amardas Ji, the third Guru of the Sikhs, departed from this world, and is marked by a large gathering at Govindwaal Sahib."
+            "name": "Dashmi",
+            "date": "2026-11-20",
+            "desc": "Dashmi (05 Maghar 558)",
+            "descHindi": "दशमी (०५ मघ्घर ५५८)",
+            "descPunjabi": "ਦਸ਼ਮੀ (੦੫ ਮੱਘਰ ੫੫੮)"
         },
         {
             "id": 83,
-            "name": "Baba Buddha Ji Mela",
-            "date": "2025-09-11",
-            "desc": "Jor Mela Baba Buddha ji (Ramdas) (27 Bhadon 555) - Celebrates the life and contributions of Baba Buddha Ji, a revered Sikh saint, with a large gathering at Ramdas."
+            "name": "Puranmashi, Prakash Gurpurab Sri Guru Nanak Dev ji, Gurgaddi Gurpurab Sri Guru Nanak Dev ji",
+            "date": "2026-11-24",
+            "desc": "Puranmashi, Prakash Gurpurab Sri Guru Nanak Dev ji, Gurgaddi Gurpurab Sri Guru Nanak Dev ji (09 Maghar 558)",
+            "descHindi": "पूर्णिमा, प्रकाश गुरुपुरब श्री गुरु नानक देव जी, गुरुगद्दी गुरुपुरब श्री गुरु नानक देव जी (०९ मघ्घर ५५८)",
+            "descPunjabi": "ਪੂਰਨਮਾਸ਼ੀ, ਪ੍ਰਕਾਸ਼ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ, ਗੁਰਗੱਦੀ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ (੦੯ ਮੱਘਰ ੫੫੮)"
         },
         {
             "id": 84,
-            "name": "Gurgaddi Sri Guru Angad Dev Ji",
-            "date": "2025-09-12",
-            "desc": "Gurgaddi Gurpurab Sri Guru Angad Dev ji (28 Bhadon 557) - Marks the day Sri Guru Angad Dev Ji became the second Guru of the Sikhs, continuing the spiritual lineage."
+            "name": "Masya",
+            "date": "2026-12-08",
+            "desc": "Masya (23 Maghar 558)",
+            "descHindi": "अमावस्या (२३ मघ्घर ५५८)",
+            "descPunjabi": "ਮੱਸਿਆ (੨੩ ਮੱਘਰ ੫੫੮)"
         },
         {
             "id": 85,
-            "name": "Sangrand (Assu), Jyoti Jot Sri Guru Nanak Dev Ji",
-            "date": "2025-09-16",
-            "desc": "Jyoti jyot Gurpurab Sri Guru Nanak Dev ji (01 Assu 557) - Observes the day Sri Guru Nanak Dev Ji, the founder of Sikhism, departed from this world."
+            "name": "Gurgaddi Gurpurab Sri Guru Gobind Singh ji",
+            "date": "2026-12-12",
+            "desc": "Gurgaddi Gurpurab Sri Guru Gobind Singh ji (27 Maghar 558)",
+            "descHindi": "गुरुगद्दी गुरुपुरब श्री गुरु गोबिंद सिंह जी (२७ मघ्घर ५५८)",
+            "descPunjabi": "ਗੁਰਗੱਦੀ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ (੨੭ ਮੱਘਰ ੫੫੮)"
         },
         {
             "id": 86,
-            "name": "Masya",
-            "date": "2025-09-21",
-            "desc": "Masya (06 Assu 557) - The new moon day in the lunar calendar, observed by Sikhs."
+            "name": "Panchami, Shaheedi Gurpurab Sri Guru Teg Bahadur ji",
+            "date": "2026-12-14",
+            "desc": "Panchami, Shaheedi Gurpurab Sri Guru Teg Bahadur ji (29 Maghar 558)",
+            "descHindi": "पंचमी, शहीदी गुरुपुरब श्री गुरु तेग बहादुर जी (२९ मघ्घर ५५८)",
+            "descPunjabi": "ਪੰਚਮੀ, ਸ਼ਹੀਦੀ ਗੁਰਪੁਰਬ ਸ੍ਰੀ ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ (੨੯ ਮੱਘਰ ੫੫੮)"
         },
         {
             "id": 87,
-            "name": "Panchami",
-            "date": "2025-09-27",
-            "desc": "Panchami (12 Assu 557) - A day in the lunar calendar observed by Sikhs."
+            "name": "Sangrand",
+            "date": "2026-12-16",
+            "desc": "Sangrand (Poh) (01 Poh 558)",
+            "descHindi": "संक्रांति (पोह) (०१ पोह ५५८)",
+            "descPunjabi": "ਸੰਗਰਾਂਦ (ਪੋਹ) (੦੧ ਪੋਹ ੫੫੮)"
         },
         {
             "id": 88,
-            "name": "Dussehra",
-            "date": "2025-10-02",
-            "desc": "Dashmi, Darbar Khalsa (Dussehra) (17 Assu 557) - Celebrates the Hindu festival of Dussehra, also known as Vijayadashami, marking the victory of good over evil, and is observed by Sikhs as Darbar Khalsa."
+            "name": "Dashmi",
+            "date": "2026-12-19",
+            "desc": "Dashmi (04 Poh 558)",
+            "descHindi": "दशमी (०४ पोह ५५८)",
+            "descPunjabi": "ਦਸ਼ਮੀ (੦੪ ਪੋਹ ੫੫੮)"
         },
         {
             "id": 89,
-            "name": "Bir Baba Buddha Ji Mela",
-            "date": "2025-10-06",
-            "desc": "Jor Mela Bir Baba Buddha ji (Thatha) (21 Assu 557) - Celebrates the life and contributions of Baba Buddha Ji, a revered Sikh saint, with a large gathering at Thatha."
-        },
-        {
-            "id": 90,
-            "name": "Bir Baba Buddha Ji Mela",
-            "date": "2025-10-07",
-            "desc": "Puranmashi, Jor Mela Bir Baba Buddha ji (Thatha) (22 Assu 557) - Celebrates the life and contributions of Baba Buddha Ji, a revered Sikh saint, with a large gathering at Thatha."
-        },
-        {
-            "id": 91,
-            "name": "Prakash Gurpurab Sri Guru Ramdas Ji",
-            "date": "2025-10-08",
-            "desc": "Prakash Gurpurab Sri Guru Ramdas ji (23 Assu 557) - Celebrates the birth anniversary of Sri Guru Ramdas Ji, the fourth Guru of the Sikhs, known for founding the city of Amritsar."
-        },
-        {
-            "id": 92,
-            "name": "Bhai Sukha Jinda Shaheedi",
-            "date": "2025-10-09",
-            "desc": "Birthday Bhai Taru Singh ji, Shaheedi Diwas Bhai Sukhdev Singh (Sukha) Bhai Harjinder Singh (Jinda) (24 Assu 557) - Celebrates the birth anniversary of Bhai Taru Singh Ji, a revered Sikh martyr, and commemorates the martyrdom of Bhai Sukhdev Singh (Sukha) and Bhai Harjinder Singh (Jinda), known for their role in the Sikh struggle."
-        },
-        {
-            "id": 93,
-            "name": "Gurgaddi Sri Guru Harkishan Ji",
-            "date": "2025-10-15",
-            "desc": "Jyoti jyot Gurpurab Sri Guru Harirai ji, Gurgaddi Gurpurab Sri Guru Harikrishan ji (30 Assu 557) - Observes the day Sri Guru Harirai Ji, the seventh Guru of the Sikhs, departed from this world, and marks the day Sri Guru Harikrishan Ji became the eighth Guru of the Sikhs."
-        },
-        {
-            "id": 94,
-            "name": "Sangrand (Katak)",
-            "date": "2025-10-17",
-            "desc": "Sangrand (Katak) (01 Katak 557) - The first day of the month of Katak in the Nanakshahi calendar."
-        },
-        {
-            "id": 95,
-            "name": "Diwali",
-            "date": "2025-10-21",
-            "desc": "Masya, Bandi Chor Divas (Diwali), Birthday Sant Gyani Kartar Singh ji Bhindranwale (05 Katak 557) - Celebrates Diwali, the festival of lights, and Bandi Chor Divas, marking the release of Guru Hargobind Ji from imprisonment, and the birth anniversary of Sant Gyani Kartar Singh Ji Bhindranwale."
-        },
-        {
-            "id": 96,
-            "name": "Gurgaddi Sri Guru Granth Sahib Ji",
-            "date": "2025-10-23",
-            "desc": "Gurgaddi Gurpurab Sri Guru Granth Sahib ji, Birthday Baba Budha ji (Kathunangal), Barsi Sardar Jassa Singh Ahluwalia (07 Katak 557) - Marks the day Sri Guru Granth Sahib Ji was declared the eternal Guru of the Sikhs, celebrates the birth anniversary of Baba Budha Ji, a revered Sikh saint, and observes the death anniversary of Sardar Jassa Singh Ahluwalia, a prominent Sikh leader."
-        },
-        {
-            "id": 97,
-            "name": "Jyoti Jot Sri Guru Gobind Singh Ji",
-            "date": "2025-10-26",
-            "desc": "Panchami, Jyoti jyot Gurpurab Sri Guru Gobind Singh ji (10 Katak 557) - Observes the day Sri Guru Gobind Singh Ji, the tenth Guru of the Sikhs, departed from this world, and is observed on Panchami."
-        },
-        {
-            "id": 98,
-            "name": "Saka Panja Sahib",
-            "date": "2025-10-30",
-            "desc": "Saka Panja Sahib (Pakistan) (14 Katak 557) - Commemorates the tragic massacre at Panja Sahib in 1922, where peaceful Sikh protestors were killed."
-        },
-        {
-            "id": 99,
-            "name": "Shaheed Bhai Beant Singh Day",
-            "date": "2025-10-31",
-            "desc": "Shaheedi Diwas Bhai Beant Singh (15 Katak 557) - Commemorates the martyrdom of Bhai Beant Singh, known for his role in avenging the desecration of Sri Akal Takht Sahib."
-        },
-        {
-            "id": 100,
-            "name": "Punjab Day",
-            "date": "2025-11-01",
-            "desc": "Dashmi, Punjab Day (16 Katak 557) - Celebrates Punjab Day, marking the reorganization of the state of Punjab in 1966."
-        },
-        {
-            "id": 101,
-            "name": "Bhagat Namdev Birthday",
-            "date": "2025-11-02",
-            "desc": "Birthday Bhagat Namdev ji (17 Katak 557) - Celebrates the birth anniversary of Bhagat Namdev Ji, a revered saint and poet whose hymns are included in the Sri Guru Granth Sahib."
-        },
-        {
-            "id": 102,
-            "name": "Mata Sahib Kaur Birthday",
-            "date": "2025-11-03",
-            "desc": "Birthday Mata Sahib Kaur ji (18 Katak 557) - Celebrates the birth anniversary of Mata Sahib Kaur Ji, revered as the mother of the Khalsa."
-        },
-        {
-            "id": 103,
-            "name": "Prakash Gurpurab Sri Guru Nanak Dev Ji",
-            "date": "2025-11-05",
-            "desc": "Puranmashi, Prakash Gurpurab Sri Guru Nanak Dev ji (20 Katak 557) - Celebrates the birth anniversary of Sri Guru Nanak Dev Ji, the founder of Sikhism, observed on the full moon day."
-        },
-        {
-            "id": 104,
-            "name": "Shaheedi Baba Deep Singh Ji",
-            "date": "2025-11-15",
-            "desc": "Shaheedi Diwas Baba Deep Singh ji, SGPC Foundation Day (30 Katak 557) - Commemorates the martyrdom of Baba Deep Singh Ji, a revered Sikh scholar and warrior, and marks the foundation day of the Shiromani Gurudwara Parbandhak Committee (SGPC)."
-        },
-        {
-            "id": 105,
-            "name": "Sangrand (Maghar)",
-            "date": "2025-11-16",
-            "desc": "Sangrand (Maghar) (01 Maghar 557) - The first day of the month of Maghar in the Nanakshahi calendar."
-        },
-        {
-            "id": 106,
-            "name": "Masya",
-            "date": "2025-11-20",
-            "desc": "Masya (05 Maghar 557) - The new moon day in the lunar calendar, observed by Sikhs."
-        },
-        {
-            "id": 107,
-            "name": "350th Gurgaddi Sri Guru Gobind Singh Ji",
-            "date": "2025-11-23",
-            "desc": "Gurgaddi Gurpurab Sri Guru Gobind Singh ji (350 years) (08 Maghar 557) - Marks the 350th anniversary of Sri Guru Gobind Singh Ji assuming the Guruship, the tenth Guru of the Sikhs."
-        },
-        {
-            "id": 108,
-            "name": "350th Shaheedi Bhai Dayala-Mati-Sati Das",
-            "date": "2025-11-24",
-            "desc": "Shaheedi Diwas Bhai Dayala ji Bhai Matidas ji Bhai Satidas ji (350 years) (09 Maghar 557) - Commemorates the 350th anniversary of the martyrdom of Bhai Dayala Ji, Bhai Mati Das Ji, and Bhai Sati Das Ji, who were executed for their unwavering faith in Sikhism."
-        },
-        {
-            "id": 109,
-            "name": "350th Shaheedi Sri Guru Tegh Bahadur Ji",
-            "date": "2025-11-25",
-            "desc": "Shaheedi Gurpurab Sri Guru Teg Bahadur ji (350 years) (10 Maghar 557) - The sacred martyrdom day of the ninth Guru, who sacrificed his life protecting religious freedom and human rights. Known as 'Hind Di Chadar' (Shield of India), Guru Tegh Bahadur Ji gave his life defending the right of people to practice their faith freely, exemplifying the Sikh principle of standing up against tyranny and protecting the oppressed."
-        },
-        {
-            "id": 110,
-            "name": "Bhai Mardana Ji Barsi",
-            "date": "2025-11-28",
-            "desc": "Akal Chalana Bhai Mardana ji (13 Maghar 557) - Observes the death anniversary of Bhai Mardana Ji, a close companion of Guru Nanak Dev Ji and a revered figure in Sikh history."
-        },
-        {
-            "id": 111,
-            "name": "Sahibzada Zorawar Singh Birthday",
-            "date": "2025-11-30",
-            "desc": "Dashmi, Birthday Sahibzada Zorawar Singh ji (15 Maghar 557) - Celebrates the birth anniversary of Sahibzada Zorawar Singh Ji, the younger son of Guru Gobind Singh Ji, known for his bravery and sacrifice."
-        },
-        {
-            "id": 112,
-            "name": "Shaheedi Baba Gurbaksh Singh",
-            "date": "2025-12-04",
-            "desc": "Puranmashi, Shaheedi Diwas Baba Gurbaksh Singh ji (19 Maghar 557) - Commemorates the martyrdom of Baba Gurbaksh Singh Ji, a revered Sikh warrior."
-        },
-        {
-            "id": 113,
-            "name": "Sahibzada Fateh Singh Birthday",
-            "date": "2025-12-14",
-            "desc": "Birthday Sahibzada Fateh Singh ji, Shiromani Akali Dal Foundation day (29 Maghar 557) - Celebrates the birth anniversary of Sahibzada Fateh Singh Ji, the younger son of Guru Gobind Singh Ji, known for his bravery and sacrifice, and marks the foundation day of the Shiromani Akali Dal."
-        },
-        {
-            "id": 114,
-            "name": "Sangrand (Poh)",
-            "date": "2025-12-15",
-            "desc": "Sangrand (Poh) (01 Poh 557) - The first day of the month of Poh in the Nanakshahi calendar."
-        },
-        {
-            "id": 115,
-            "name": "Masya",
-            "date": "2025-12-19",
-            "desc": "Masya (05 Poh 557) - The new moon day in the lunar calendar, observed by Sikhs."
-        },
-        {
-            "id": 116,
-            "name": "Evacuation Sri Anandgarh Fort",
-            "date": "2025-12-20",
-            "desc": "Leaving Fort Sri Anandgarh Sahib (06 Poh 557) - Commemorates the evacuation of Sri Anandgarh Fort by Guru Gobind Singh Ji and his Sikhs during the Mughal siege."
-        },
-        {
-            "id": 117,
-            "name": "Family Separation Day",
-            "date": "2025-12-21",
-            "desc": "Family Separation (Sarsa Nangal), Shaheedi Diwas Baba Jivan Singh ji (Bhai Jaita ji) (07 Poh 557) - Remembers the day Guru Gobind Singh Ji's family was separated at Sarsa Nangal during the Mughal siege, and commemorates the martyrdom of Baba Jivan Singh Ji (Bhai Jaita Ji), a devoted Sikh who retrieved the head of Guru Tegh Bahadur Ji."
-        },
-        {
-            "id": 118,
-            "name": "Shaheedi Vadde Sahibzade",
-            "date": "2025-12-22",
-            "desc": "Shaheedi Diwas Wadde Sahibzade (Chamkaur Sahib) (08 Poh 557) - Commemorates the martyrdom of Guru Gobind Singh Ji's elder sons, Sahibzada Ajit Singh and Sahibzada Jujhar Singh, who attained martyrdom fighting with remarkable courage at the Battle of Chamkaur. Despite their young age, they exemplified the Sikh principles of standing against injustice and maintaining dignity in the face of overwhelming odds."
-        },
-        {
-            "id": 119,
-            "name": "Shaheedi Bhai Sangat Singh",
-            "date": "2025-12-23",
-            "desc": "Shaheedi Diwas Bhai Sangat Singh ji (09 Poh 557) - Commemorates the martyrdom of Bhai Sangat Singh Ji, a devoted Sikh who fought alongside Guru Gobind Singh Ji at the Battle of Chamkaur."
-        },
-        {
-            "id": 120,
-            "name": "Panchami",
-            "date": "2025-12-25",
-            "desc": "Panchami (11 Poh 557) - A day in the lunar calendar observed by Sikhs."
-        },
-        {
-            "id": 121,
-            "name": "Guru Gobind Singh Prakash",
-            "date": "2025-12-27",
-            "desc": "Shaheedi Diwas Chhote Sahibzade and Mata Gujari ji, Prakash Gurpurab Sri Guru Gobind Singh ji (13 Poh 557) - Guru Gobind Singh Ji, born in 1666, was the tenth Guru of Sikhism and the founder of the Khalsa in 1699."
-        },
-        {
-            "id": 122,
-            "name": "Dashmi",
-            "date": "2025-12-29",
-            "desc": "Dashmi (15 Poh 557) - A day in the lunar calendar observed by Sikhs."
-        },
-        {
-            "id": 123,
             "name": "Puranmashi",
-            "date": "2026-01-03",
-            "desc": "Puranmashi (20 Poh 557) - The full moon day in the lunar calendar, observed by Sikhs."
-        },
-        {
-            "id": 124,
-            "name": "Shaheedi Bhai Kehar & Satwant Singh",
-            "date": "2026-01-06",
-            "desc": "Shaheedi Diwas Bhai Kehar Singh Bhai Satwant Singh (23 Poh 557) - Bhai Kehar Singh and Bhai Satwant Singh attained martyrdom in 1989 for their role in avenging the desecration of Sri Akal Takht Sahib."
-        },
-        {
-            "id": 125,
-            "name": "Sri Harimandir Sahib Foundation Day",
-            "date": "2026-01-14",
-            "desc": "Foundation day Sachkhand Sri Harimandir Sahib (Amritsar), Jor Mela Sri Muktsar Sahib (Maghi) (01 Magh 557) - The foundation of Sri Harimandir Sahib was laid in 1581 by Guru Arjan Dev Ji, serving as the spiritual and cultural epicenter of Sikhism."
-        },
-        {
-            "id": 126,
-            "name": "Masya",
-            "date": "2026-01-18",
-            "desc": "Masya (05 Magh 557) - The new moon day in the lunar calendar, observed by Sikhs."
-        },
-        {
-            "id": 127,
-            "name": "Chabian Da Morcha",
-            "date": "2026-01-20",
-            "desc": "Chabiyan Da Morcha (Amritsar) (07 Magh 557) - Commemorates the peaceful protest against the British government's interference in the management of Gurudwara Chabiyan Da Morcha, showcasing Sikh resilience and commitment to non-violent resistance."
-        },
-        {
-            "id": 128,
-            "name": "Basant Panchami",
-            "date": "2026-01-23",
-            "desc": "Panchami, Basant Panchami, Marriage Day : Sri Guru Gobind Singh ji (Guru ka Lahore) (10 Magh 557) - Celebrates the arrival of spring and is also recognized as the marriage day of Sri Guru Gobind Singh Ji, which took place in Guru ka Lahore."
-        },
-        {
-            "id": 129,
-            "name": "Baba Deep Singh Birthday",
-            "date": "2026-01-27",
-            "desc": "Birthday Baba Deep Singh ji (14 Magh 557) - Celebrates the birth anniversary of Baba Deep Singh Ji, a revered Sikh scholar and martyr known for his selfless service and sacrifice for the Sikh faith."
-        },
-        {
-            "id": 130,
-            "name": "Prakash Gurpurab Sri Guru Harirai Ji",
-            "date": "2026-01-31",
-            "desc": "Prakash Gurpurab Sri Guru Harirai Sahib ji (18 Magh 557) - Celebrates the birth anniversary of Sri Guru Harirai Ji, the seventh Guru of the Sikhs, known for his compassion and environmental stewardship."
-        },
-        {
-            "id": 131,
-            "name": "Bhagat Ravidas Birthday",
-            "date": "2026-02-01",
-            "desc": "Puranmashi, Birthday Bhagat Ravidas ji (19 Magh 557) - Celebrates the birth anniversary of Bhagat Ravidas Ji, a revered saint and poet whose hymns are included in the Sri Guru Granth Sahib, emphasizing social justice and equality."
-        },
-        {
-            "id": 132,
-            "name": "Wadda Ghallughara",
-            "date": "2026-02-09",
-            "desc": "Wadda Ghallughara Kup Rohira (Sangrur) (27 Magh 557) - Commemorates the 'Greater Holocaust' of 1762, where a large number of Sikhs were massacred near Kup Rohira, a significant event in Sikh history marking resilience and sacrifice."
-        },
-        {
-            "id": 133,
-            "name": "Sahibzada Ajit Singh Birthday",
-            "date": "2026-02-11",
-            "desc": "Birthday Sahibzada Ajit Singh ji (29 Magh 557) - Marks the birth anniversary of Sahibzada Ajit Singh Ji, the eldest son of Guru Gobind Singh Ji, revered for his bravery and sacrifice at the Battle of Chamkaur."
-        },
-        {
-            "id": 134,
-            "name": "Sangrand (Phagun)",
-            "date": "2026-02-12",
-            "desc": "Sangrand (Phagun) (01 Phagun 557) - The first day of the month of Phagun in the Nanakshahi calendar."
-        },
-        {
-            "id": 135,
-            "name": "Masya",
-            "date": "2026-02-17",
-            "desc": "Masya (06 Phagun 557) - The new moon day in the lunar calendar, observed by Sikhs."
-        },
-        {
-            "id": 136,
-            "name": "Saka Sri Nankana Sahib",
-            "date": "2026-02-21",
-            "desc": "Saka Sri Nankana Sahib (Pakistan), Jaitu Da Morcha (Faridkot) (10 Phagun 557) - Commemorates the tragic massacre at Sri Nankana Sahib in 1921, where peaceful Sikh protestors were killed, and Jaitu Da Morcha, a significant event in the Gurudwara Reform Movement."
-        },
-        {
-            "id": 137,
-            "name": "Puranmashi",
-            "date": "2026-03-03",
-            "desc": "Puranmashi (20 Phagun 557) - The full moon day in the lunar calendar, observed by Sikhs."
-        },
-        {
-            "id": 138,
-            "name": "Hola Mahalla",
-            "date": "2026-03-04",
-            "desc": "Hola Mahalla (21 Phagun 557) - A Sikh festival that takes place at Sri Anandpur Sahib, characterized by displays of martial arts, horsemanship, and community service."
-        },
-        {
-            "id": 139,
-            "name": "Sangrand (Chet) Punjabi New Year",
-            "date": "2026-03-14",
-            "desc": "Nanakshahi Punjabi New Year 558 (01 Chet 558) - Marks the beginning of the Nanakshahi calendar, the Sikh New Year."
+            "date": "2026-12-23",
+            "desc": "Puranmashi (08 Poh 558)",
+            "descHindi": "पूर्णिमा (०८ पोह ५५८)",
+            "descPunjabi": "ਪੂਰਨਮਾਸ਼ੀ (੦੮ ਪੋਹ ੫੫੮)"
         }
     ]
 }

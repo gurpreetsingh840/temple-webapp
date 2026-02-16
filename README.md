@@ -9,12 +9,17 @@ A modern, responsive website for Gurudwara Singh Sabha built with Angular and Ta
 - Community services section
 - Contact information with Google Maps integration
 - Modern UI with smooth animations
+- Firebase integration for hosting and services
+- SEO optimized with meta tags and sitemap
+- Automated deployment scripts
 
 ## Tech Stack
-- Angular 19
-- TailwindCSS
-- Material Icons
-- Font Awesome
+- **Angular 21** - Modern web framework
+- **TailwindCSS 3.4** - Utility-first CSS framework
+- **Angular Fire 21** - Firebase integration
+- **Firebase 12** - Backend and hosting
+- **TypeScript 5.9** - Type-safe development
+- **ESLint & Prettier** - Code quality and formatting
 
 ## Development
 ```bash
@@ -26,14 +31,33 @@ npm install
 
 # Start development server
 npm start
+# The app will be available at http://localhost:4200
+```
+
+## Build Commands
+```bash
+# Development build
+npm run build:dev
+
+# Production build
+npm run build:prod
+
+# Production build for GitHub Pages
+npm run build:prod:git
+
+# The site will be built to /docs folder
 ```
 
 ## Deployment
 ```bash
-# Build for production
-ng build
+# Deploy to Firebase Hosting
+npm run deploy:firebase
 
-# The site will be built to /docs folder for GitHub Pages
+# Deploy to Firebase (alias for deploy:all)
+npm run deploy:all
+
+# Deploy to GitHub Pages
+npm run deploy:gitpages
 ```
 
 ## Live Demo

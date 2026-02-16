@@ -1,27 +1,32 @@
 <!-- Hero Section -->
-<section class="hero-section"
-  [ngStyle]="{'background-image': 'linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(assets/home_back_ground.jpeg)'}">
+<section class="hero-section" [ngStyle]="{'background-image': 'url(assets/home_back_ground.jpeg)'}">
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <!-- Khanda Symbol -->
-    <div class="mb-6">
-      <img src="assets/khanda.svg" alt="Khanda Symbol" class="khanda-logo" aria-hidden="true" #khandaLogo>
+    <div class="mb-6 animate-fadeInDown">
+      <img src="assets/khanda.svg" alt="Khanda Symbol" class="khanda-logo animate-khanda" aria-hidden="true"
+        #khandaLogo>
     </div>
 
-    <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+    <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 animate-fadeInUp delay-100">
       Gurudwara Singh Sabha Richmond VA
     </h1>
-    <p class="text-xl text-white/90 max-w-3xl mb-8">
+    <p class="text-xl text-white/90 max-w-3xl mb-8 animate-fadeInUp delay-200">
       Welcome to our spiritual home. Experience the divine teachings of Guru Granth Sahib Ji
       and join our vibrant community in prayer, service, and celebration.
     </p>
-    <div class="flex flex-wrap justify-center gap-4">
+    <div class="flex flex-wrap justify-center gap-4 animate-fadeInUp delay-300">
       <a routerLink="/services/weekly-programs" class="btn-primary">
         Weekly Programs
       </a>
-      <a routerLink="/about" class="btn-outline border-white text-white hover:bg-gray-100 hover:text-primary-600">
+      <a routerLink="/about" class="btn-outline border-white text-white hover:bg-white/20">
         Learn More
       </a>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" (click)="scrollToSection('services')">
+      <i class="fas fa-chevron-down text-3xl"></i>
     </div>
   </div>
 </section>
@@ -29,7 +34,7 @@
 <!-- Welcome Section -->
 <section class="section-default section-dark">
   <div class="content-container">
-    <div class="content-narrow">
+    <div class="content-narrow animate-on-scroll">
       <h2 class="heading-2 mb-6">Welcome to Our Spiritual Home</h2>
       <p class="text-body mb-8">
         Welcome, and thank you for visiting Gurudwara Singh Sabha Richmond, VA online.
@@ -44,14 +49,18 @@
 <!-- Services Grid -->
 <section id="services" class="section-default section-light">
   <div class="content-container">
-    <h2 class="heading-2 text-center mb-12">Our Services</h2>
+    <h2 class="heading-2 text-center mb-4 animate-on-scroll">Our Services</h2>
+    <p class="text-center text-body mb-12 max-w-2xl mx-auto animate-on-scroll delay-100">
+      Discover the spiritual programs and services we offer to our community
+    </p>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
       <!-- Weekly Programs -->
-      <div class="card p-8 hover:shadow-lg transition">
+      <div
+        class="card card-gradient-border p-8 hover:shadow-2xl transition-all duration-300 animate-on-scroll delay-100">
         <div class="flex flex-col h-full">
           <div class="flex items-center mb-4">
-            <div class="icon-circle">
+            <div class="icon-circle transform transition-transform duration-300 hover:rotate-12 hover:scale-110">
               <i class="fa-solid fa-calendar-days icon-circle-icon"></i>
             </div>
             <h3 class="heading-3">Weekly Programs</h3>
@@ -61,9 +70,10 @@
             Experience spiritual enlightenment through Kirtan, Katha, and Langar Seva.
           </p>
           <div class="mt-4">
-            <a routerLink="/services/weekly-programs" class="link-primary inline-flex items-center">
+            <a routerLink="/services/weekly-programs" class="link-primary inline-flex items-center group">
               Learn More
-              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-4 h-4 ml-2 transform transition-transform group-hover:translate-x-1" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
             </a>
@@ -72,10 +82,11 @@
       </div>
 
       <!-- Monthly Programs -->
-      <div class="card p-8 hover:shadow-lg transition">
+      <div
+        class="card card-gradient-border p-8 hover:shadow-2xl transition-all duration-300 animate-on-scroll delay-200">
         <div class="flex flex-col h-full">
           <div class="flex items-center mb-4">
-            <div class="icon-circle">
+            <div class="icon-circle transform transition-transform duration-300 hover:rotate-12 hover:scale-110">
               <i class="fa-solid fa-calendar-check icon-circle-icon"></i>
             </div>
             <h3 class="heading-3">Monthly Programs & Events</h3>
@@ -86,9 +97,10 @@
             youth activities, and community gatherings to strengthen our bonds and spiritual connection.
           </p>
           <div class="mt-4">
-            <a routerLink="/events" class="link-primary inline-flex items-center">
+            <a routerLink="/events" class="link-primary inline-flex items-center group">
               Learn More
-              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-4 h-4 ml-2 transform transition-transform group-hover:translate-x-1" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
             </a>
@@ -97,10 +109,11 @@
       </div>
 
       <!-- Religious Services -->
-      <div class="card p-8 hover:shadow-lg transition">
+      <div
+        class="card card-gradient-border p-8 hover:shadow-2xl transition-all duration-300 animate-on-scroll delay-300">
         <div class="flex flex-col h-full">
           <div class="flex items-center mb-4">
-            <div class="icon-circle">
+            <div class="icon-circle transform transition-transform duration-300 hover:rotate-12 hover:scale-110">
               <i class="fa-solid fa-book-open icon-circle-icon"></i>
             </div>
             <h3 class="heading-3">Religious Services</h3>
@@ -112,9 +125,10 @@
             ceremonies and religious events.
           </p>
           <div class="mt-4">
-            <a routerLink="/services/religious-services" class="link-primary inline-flex items-center">
+            <a routerLink="/services/religious-services" class="link-primary inline-flex items-center group">
               Learn More
-              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-4 h-4 ml-2 transform transition-transform group-hover:translate-x-1" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
             </a>
@@ -129,15 +143,15 @@
 <!-- Mission Section -->
 <section class="section-default section-primary">
   <div class="content-container">
-    <div class="content-narrow">
+    <div class="content-narrow animate-on-scroll">
       <h2 class="heading-2 text-white mb-6">Our Mission</h2>
-      <p class="text-lg mb-8">
+      <p class="text-lg mb-8 text-white/90">
         The objective of Gurudwara Singh Sabha is to Preach Guru Nanak Dev Ji's universal
         message of brotherhood, learn, practice and promote religious, cultural and social
         values based on the concept of Guru Nanak Dev Ji's and universal brotherhood as
         taught by ten Sikh Gurus and Guru Granth Sahib.
       </p>
-      <a routerLink="/about" class="btn-outline border-white text-white hover:bg-gray-100 hover:text-primary-600">
+      <a routerLink="/about" class="btn-outline border-white text-white hover:bg-white/20">
         Learn More About Us
       </a>
     </div>
@@ -147,7 +161,7 @@
 <!-- Contact Section -->
 <section class="section-default section-light">
   <div class="content-container">
-    <div class="content-narrow">
+    <div class="content-narrow animate-on-scroll">
       <h2 class="heading-2 mb-6">Visit Us</h2>
       <app-contact-info [directionsClass]="'btn-primary'" />
     </div>

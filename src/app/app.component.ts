@@ -20,9 +20,9 @@ import { AnalyticsService } from './shared/services/analytics.service ';
         <!-- Previous page placeholder -->
         @if (isNavigating) {
           <div 
-            class="absolute inset-0 z-10"
+            class="absolute inset-0 z-10 pointer-events-none"
             [class.animate-slide-out]="isNavigating">
-            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-slate-100/10 to-slate-100/20 dark:via-slate-900/10 dark:to-slate-900/20"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-slate-100/10 to-slate-100/20 dark:via-slate-900/10 dark:to-slate-900/20 pointer-events-none"></div>
           </div>
         }
         

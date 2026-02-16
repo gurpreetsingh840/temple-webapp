@@ -4,34 +4,125 @@
 		transform: scale(0.2);
 		opacity: 0;
 	}
+
 	60% {
 		transform: scale(1.15);
 		opacity: 1;
 	}
+
 	80% {
 		transform: scale(0.95);
 	}
+
 	100% {
 		transform: scale(1);
 	}
 }
 
-
 .khanda-logo {
 	max-width: 8rem;
 	width: 100%;
 	height: auto;
-	filter: drop-shadow(0 0 32px #fde68a) drop-shadow(0 0 16px #fff7ae);
+	filter: drop-shadow(0 0 32px #fde68a) drop-shadow(0 0 16px #fff7ae) drop-shadow(0 0 8px #fbbf24);
 }
 
 .khanda-animate-in {
-	animation: khanda-load-bounce 1.2s cubic-bezier(.68,-0.55,.27,1.55) 1;
+	animation: khanda-load-bounce 1.2s cubic-bezier(.68, -0.55, .27, 1.55) 1;
 }
 
 @keyframes khanda-pulse {
-	0%, 100% { transform: scale(1) rotate(-6deg); }
-	50% { transform: scale(1.08) rotate(6deg); }
+
+	0%,
+	100% {
+		transform: scale(1) rotate(-3deg);
+		filter: drop-shadow(0 0 32px #fde68a) drop-shadow(0 0 16px #fff7ae) drop-shadow(0 0 8px #fbbf24);
+	}
+
+	50% {
+		transform: scale(1.05) rotate(3deg);
+		filter: drop-shadow(0 0 40px #fde68a) drop-shadow(0 0 20px #fff7ae) drop-shadow(0 0 12px #fbbf24);
+	}
 }
+
 .animate-khanda {
-	animation: khanda-pulse 3.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+	animation: khanda-pulse 4s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Stat Card Animations */
+.stat-card {
+	position: relative;
+	overflow: hidden;
+}
+
+.stat-card::before {
+	content: '';
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	background: linear-gradient(45deg,
+			transparent,
+			rgba(251, 146, 60, 0.1),
+			transparent);
+	transform: rotate(45deg);
+	transition: all 0.6s ease;
+}
+
+.stat-card:hover::before {
+	left: 100%;
+}
+
+/* Service Card Icon Animation */
+.icon-circle {
+	position: relative;
+	overflow: hidden;
+}
+
+.icon-circle::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	border-radius: 50%;
+	background: radial-gradient(circle, rgba(251, 146, 60, 0.3) 0%, transparent 70%);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.icon-circle:hover::after {
+	opacity: 1;
+}
+
+/* Scroll Indicator Pulse */
+@keyframes scroll-pulse {
+
+	0%,
+	100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+}
+
+.scroll-indicator {
+	animation: bounce 2s infinite, scroll-pulse 2s infinite;
+}
+
+/* Enhanced Link Hover */
+.group:hover svg {
+	animation: arrow-slide 0.6s ease-in-out;
+}
+
+@keyframes arrow-slide {
+
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	50% {
+		transform: translateX(4px);
+	}
 }

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ContactInfoComponent } from '../../shared/components/contact-info/contact-info.component';
 
@@ -10,8 +10,13 @@ import { ContactInfoComponent } from '../../shared/components/contact-info/conta
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements AfterViewInit {
+export class HomeComponent implements AfterViewInit, OnInit {
   @ViewChild('khandaLogo', { static: false }) khandaLogo!: ElementRef<HTMLImageElement>;
+
+  ngOnInit() {
+    // Set up scroll animations
+    this.setupScrollAnimations();
+  }
 
   ngAfterViewInit() {
     if (this.khandaLogo) {
@@ -25,7 +30,33 @@ export class HomeComponent implements AfterViewInit {
           });
         }, { threshold: 0.5 });
         observer.observe(this.khandaLogo.nativeElement);
-      }, 1350); // 350ms delay to allow for loader and rendering
+      }, 1350);
+    }
+  }
+
+  setupScrollAnimations() {
+    if (typeof window !== 'undefined') {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fadeInUp');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      // Observe all animated elements after a short delay to ensure DOM is ready
+      setTimeout(() => {
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+          observer.observe(el);
+        });
+      }, 100);
+    }
+  }
+
+  scrollToSection(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
 }

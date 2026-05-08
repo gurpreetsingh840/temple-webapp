@@ -24,7 +24,7 @@ export class ContactInfoService implements ContactInfo {
     zip: '23235'
   };
 
-  phone = '804-310-4567';
+  phone = '804-514-2506';
   email = 'ssricva@gmail.com';
 
   getFullAddress(): string {

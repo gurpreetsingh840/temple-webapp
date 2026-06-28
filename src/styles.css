@@ -7,17 +7,28 @@
   :root {
     --bg-color: theme('colors.background.light');
     --text-color: theme('colors.text.primary.light');
+    --aurora-1: 15, 23, 42;
+    --aurora-2: 201, 149, 62;
+    --aurora-3: 255, 153, 51;
+    --aurora-opacity-1: 0.10;
+    --aurora-opacity-2: 0.08;
+    --aurora-opacity-3: 0.06;
   }
 
   .dark {
     --bg-color: theme('colors.background.dark');
     --text-color: theme('colors.text.primary.dark');
+    --aurora-1: 30, 41, 59;
+    --aurora-2: 212, 168, 83;
+    --aurora-3: 255, 179, 71;
+    --aurora-opacity-1: 0.15;
+    --aurora-opacity-2: 0.10;
+    --aurora-opacity-3: 0.08;
   }
 }
 
 @layer components {
 
-  /* Layout */
   .page-container {
     @apply container mx-auto px-4 py-8;
   }
@@ -26,16 +37,14 @@
     @apply py-12;
   }
 
-  /* Cards */
   .card {
     @apply bg-background-card-light dark:bg-background-card-dark rounded-xl shadow-lg;
   }
 
   .card-gradient {
-    @apply bg-gradient-to-r from-primary-500/85 to-primary-400;
+    @apply bg-gradient-to-r from-accent-500/85 to-accent-400;
   }
 
-  /* Typography */
   .heading-1 {
     @apply text-4xl md:text-5xl font-bold text-text-primary-light dark:text-text-primary-dark;
   }
@@ -49,94 +58,69 @@
   }
 
   .text-body {
-    @apply text-text-secondary-light dark:text-text-secondary-dark;
+    @apply text-text-secondary-light dark:text-text-secondary-dark leading-relaxed;
   }
 
-  /* Buttons */
   .btn {
-    @apply px-6 py-3 rounded-lg transition-colors duration-200;
+    @apply px-6 py-3 rounded-lg font-medium;
   }
 
   .btn-primary {
-    @apply btn bg-primary-500 hover:bg-primary-600 text-white;
+    @apply btn bg-accent-500 hover:bg-accent-600 text-white shadow-md;
   }
 
   .btn-outline {
-    @apply btn border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white;
+    @apply btn border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white;
   }
 
-  /* Links */
   .link {
-    @apply transition-colors duration-200;
+    @apply no-underline;
+  }
+
+  .link-base {
+    @apply text-accent-600 hover:text-accent-500 transition-colors duration-200;
   }
 
   .link-primary {
-    @apply link text-primary-500 hover:text-primary-600 dark:text-primary-400 dark:hover:text-primary-500;
+    @apply link text-accent-500 hover:text-accent-600 dark:text-accent-400 dark:hover:text-accent-500;
   }
 
-  /* Navigation */
   .nav-link {
-    @apply link text-text-secondary-light dark:text-text-secondary-dark hover:text-primary-500 dark:hover:text-primary-400;
+    @apply link text-text-secondary-light dark:text-text-secondary-dark hover:text-accent-500 dark:hover:text-accent-400;
   }
 
-  /* Gradients */
   .gradient-primary {
-    @apply bg-gradient-to-r from-primary-600/90 to-primary-500/90;
+    @apply bg-gradient-to-r from-primary-700/90 to-primary-600/90;
   }
 
-  /* Link styles */
-  .link-base {
-    @apply text-orange-600 border-orange-600 hover:text-orange-700 hover:border-orange-700 dark:text-orange-400 dark:border-orange-400 dark:hover:text-orange-500 dark:hover:border-orange-500 transition-colors duration-200;
-  }
-
-  /* card list container */
   .card-list-container {
-    @apply bg-gradient-to-br from-orange-50 to-orange-100 dark:from-gray-700 dark:to-gray-600 rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300;
+    @apply bg-cream-100 dark:bg-primary-700 rounded-xl p-6 shadow-md;
   }
 
-  /* Animation */
-  .animate-fadeIn {
-    @apply opacity-0;
-    animation: fadeIn 0.5s forwards;
-  }
-
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
-  }
-
-  /* Hero section styles */
   .hero-section {
-    @apply relative h-[65vh] bg-cover bg-center;
-  }
-
-  .hero-overlay {
-    @apply absolute inset-0 bg-gradient-to-b from-black/60 to-black/30;
+    @apply relative min-h-[55vh] lg:min-h-[60vh] bg-cream-50 dark:bg-primary-900 overflow-hidden;
   }
 
   .hero-content {
-    @apply relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center;
+    @apply relative z-10 container mx-auto px-4 py-12 md:py-16 flex flex-col items-center text-center;
   }
 
-  /* Section layouts */
   .section-default {
     @apply py-16;
   }
 
   .section-light {
-    @apply bg-gray-50 dark:bg-gray-800;
+    @apply bg-cream-50 dark:bg-primary-800;
   }
 
   .section-dark {
-    @apply bg-gray-100 dark:bg-gray-900;
+    @apply bg-cream-100 dark:bg-primary-900;
   }
 
   .section-primary {
-    @apply bg-primary-600 dark:bg-gray-900 text-white;
+    @apply bg-primary-800 dark:bg-primary-950 text-white;
   }
 
-  /* Container layouts */
   .content-container {
     @apply container mx-auto px-4;
   }
@@ -145,27 +129,101 @@
     @apply max-w-3xl mx-auto text-center;
   }
 
-  /* Service card specific */
+  /* Bento card — glassmorphism with micro-interactions (Premium hover) */
+  .bento-card {
+    @apply rounded-2xl p-8;
+    background: rgba(250, 247, 242, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dark .bento-card {
+    background: rgba(30, 41, 59, 0.7);
+    border-color: rgba(71, 85, 105, 0.3);
+  }
+  .bento-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 40px rgba(201, 149, 62, 0.15), 0 0 0 1px rgba(201, 149, 62, 0.3);
+  }
+
   .service-grid {
     @apply grid grid-cols-1 md:grid-cols-2 gap-8;
   }
 
   .icon-circle {
-    @apply w-12 h-12 rounded-full bg-orange-100 dark:bg-gray-600 flex items-center justify-center mr-4;
+    @apply w-12 h-12 rounded-full bg-accent-100 dark:bg-primary-600 flex items-center justify-center mr-4;
   }
 
   .icon-circle-icon {
-    @apply text-orange-600 dark:text-orange-400 text-xl;
+    @apply text-accent-600 dark:text-accent-400 text-xl;
   }
 
-  /* Common spacing */
   .khanda-logo {
     @apply h-32 w-32;
+    filter: drop-shadow(0 0 32px rgba(255, 153, 51, 0.4)) drop-shadow(0 0 16px rgba(255, 179, 71, 0.3));
+  }
+
+  /* Aurora background — ambient gradient drift */
+  .aurora-mesh {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse 80% 60% at 20% 30%, rgba(var(--aurora-1), var(--aurora-opacity-1)) 0%, transparent 70%),
+      radial-gradient(ellipse 60% 50% at 80% 70%, rgba(var(--aurora-2), var(--aurora-opacity-2)) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 40% at 50% 50%, rgba(var(--aurora-3), var(--aurora-opacity-3)) 0%, transparent 50%);
+  }
+
+  .aurora-mesh::before,
+  .aurora-mesh::after {
+    content: '';
+    position: absolute;
+    inset: -50%;
+    will-change: transform;
+    pointer-events: none;
+  }
+
+  .aurora-mesh::before {
+    background: radial-gradient(ellipse 40% 30% at 50% 50%, rgba(var(--aurora-2), 0.10), transparent);
+    animation: aurora-drift-1 25s ease-in-out infinite alternate;
+  }
+
+  .aurora-mesh::after {
+    background: radial-gradient(ellipse 30% 40% at 50% 50%, rgba(var(--aurora-1), 0.08), transparent);
+    animation: aurora-drift-2 30s ease-in-out infinite alternate;
+  }
+
+  @keyframes aurora-drift-1 {
+    0%   { transform: translate3d(-5%, -5%, 0) scale(1)   rotate(0deg); }
+    50%  { transform: translate3d(5%, 3%, 0)    scale(1.1) rotate(3deg); }
+    100% { transform: translate3d(-3%, 5%, 0)   scale(1.05) rotate(-2deg); }
+  }
+
+  @keyframes aurora-drift-2 {
+    0%   { transform: translate3d(5%, 5%, 0)    scale(1.1) rotate(-3deg); }
+    50%  { transform: translate3d(-5%, -3%, 0)  scale(1)   rotate(0deg); }
+    100% { transform: translate3d(3%, -5%, 0)   scale(1.08) rotate(4deg); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .aurora-mesh::before,
+    .aurora-mesh::after,
+    .bento-card,
+    .bento-card:hover {
+      animation: none;
+      transition: none;
+      transform: none;
+    }
   }
 }
 
 @layer utilities {
-  /* Additional utility classes can be added here */
+  .text-balance {
+    text-wrap: balance;
+  }
 }
 
 body {
@@ -182,15 +240,12 @@ body {
   flex-direction: column;
 }
 
-/* Base styles and common utility classes */
-
-/* Card styles */
 .card-header {
-  @apply bg-gradient-to-r from-orange-500/85 to-orange-400 px-6 py-4 flex items-center;
+  @apply bg-gradient-to-r from-accent-500/85 to-accent-400 px-6 py-4 flex items-center;
 }
 
 .card-header-icon {
-  @apply bg-gray-100/10 rounded-full p-2 mr-3;
+  @apply bg-white/10 rounded-full p-2 mr-3;
 }
 
 .card-header-icon svg {
@@ -205,35 +260,26 @@ body {
   @apply p-6;
 }
 
-/* Section styles */
 .section-hero {
-  @apply bg-gradient-to-r from-orange-600/90 to-orange-500/90 text-white py-16;
+  @apply bg-gradient-to-r from-primary-700/90 to-primary-600/90 text-white py-16;
 }
 
 .section-container {
   @apply container mx-auto px-4;
 }
 
-/* Text styles */
 .text-primary {
-  @apply text-gray-800 dark:text-white;
+  @apply text-primary-800 dark:text-white;
 }
 
 .text-secondary {
-  @apply text-gray-600 dark:text-gray-300;
+  @apply text-primary-400 dark:text-primary-300;
 }
 
-/* Link styles */
 .link-primary {
-  @apply text-orange-600 hover:text-orange-700 dark:text-orange-500 dark:hover:text-orange-400 transition-colors duration-200;
+  @apply text-accent-500 hover:text-accent-600 dark:text-accent-400 dark:hover:text-accent-500;
 }
 
-/* Button styles */
-.btn-primary {
-  @apply inline-flex items-center px-6 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors duration-200;
-}
-
-/* Grid layouts */
 .grid-2-cols {
   @apply grid md:grid-cols-2 gap-6;
 }
@@ -242,7 +288,6 @@ body {
   @apply grid md:grid-cols-3 gap-6;
 }
 
-/* List styles */
 .list-item {
   @apply flex items-center space-x-2 text-secondary;
 }

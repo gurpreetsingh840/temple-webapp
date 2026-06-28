@@ -16,6 +16,13 @@ import { AnalyticsService } from './shared/services/analytics.service ';
   template: `
     <div class="flex flex-col min-h-screen overflow-x-hidden">
       <app-header [darkMode]="darkMode()" (toggleDarkMode)="toggleDarkMode()" />
+      <!-- Scroll progress indicator (motion-design-skill: Premium ambient) -->
+      <div class="fixed top-20 left-0 right-0 h-0.5 z-50 bg-white/20 dark:bg-black/20">
+        <div
+          class="h-full bg-gradient-to-r from-accent-400 to-accent-500 transition-all duration-100 ease-out"
+          [style.width.%]="scrollProgress() * 100"
+        ></div>
+      </div>
       <main class="flex-grow relative">
         <!-- Previous page placeholder -->
         @if (isNavigating) {
@@ -39,7 +46,7 @@ import { AnalyticsService } from './shared/services/analytics.service ';
       @if (showScrollTop) {
         <button
           (click)="scrollToTop()"
-          class="fixed bottom-6 right-6 p-3 rounded-full bg-rose-600 dark:bg-rose-500 text-white shadow-lg hover:bg-rose-500 dark:hover:bg-rose-400 transition-all duration-300 transform hover:scale-110"
+          class="fixed bottom-6 right-6 p-3 rounded-full bg-accent-500 text-white shadow-lg hover:bg-accent-600 transition-all duration-300 transform hover:scale-110"
           aria-label="Scroll to top">
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
@@ -104,6 +111,7 @@ export class AppComponent implements OnInit {
 
   isNavigating = false;
   showScrollTop = false;
+  scrollProgress = signal(0);
 
   public darkMode = signal<boolean>(
     JSON.parse(window.localStorage.getItem('darkMode') ?? String(window.matchMedia('(prefers-color-scheme: dark)').matches))
@@ -116,6 +124,9 @@ export class AppComponent implements OnInit {
   @HostListener('window:scroll')
   onWindowScroll() {
     this.showScrollTop = window.scrollY > 200;
+    const scrolled = window.scrollY;
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    this.scrollProgress.set(Math.min(scrolled / max, 1));
   }
 
   scrollToTop() {

@@ -1,155 +1,347 @@
-<!-- Hero Section -->
-<section class="hero-section"
-  [ngStyle]="{'background-image': 'linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(assets/home_back_ground.jpeg)'}">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <!-- Khanda Symbol -->
-    <div class="mb-6">
-      <img src="assets/khanda.svg" alt="Khanda Symbol" class="khanda-logo" aria-hidden="true" #khandaLogo>
+<app-hero-banner
+  title="Gurudwara Singh Sabha Richmond VA"
+  subtitle="Welcome to our spiritual home. Experience the divine teachings of Guru Granth Sahib Ji and join our vibrant community in prayer, service, and celebration."
+  [showCtas]="true"
+/>
+
+<!-- Stats Row — animated counters -->
+<section #sectionReveal class="section-default section-dark scroll-section relative overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+    <div class="absolute -top-20 -left-20 w-80 h-80 bg-accent-500/3 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-saffron-500/3 rounded-full blur-3xl"></div>
+  </div>
+  <div class="content-container relative">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      @for (stat of stats; track stat.label) {
+        <div class="text-center">
+          <div class="text-4xl md:text-5xl font-bold text-accent-500 dark:text-accent-400 mb-2" #statEl>
+            {{ stat.value }}{{ stat.suffix }}
+          </div>
+          <div class="text-primary-700 dark:text-primary-300 text-sm md:text-base font-medium">{{ stat.label }}</div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- Welcome Section — bento with image + text -->
+<section #sectionReveal class="section-default section-light scroll-section">
+  <div class="content-container">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div class="relative">
+        <div class="bento-card p-8 lg:p-10">
+          <span class="text-accent-500 dark:text-accent-400 text-sm font-semibold tracking-widest uppercase mb-3 block">Welcome</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-primary-800 dark:text-cream-50 mb-6 leading-tight">
+            A Place of Peace &amp; Community
+          </h2>
+          <p class="text-primary-700 dark:text-primary-300 leading-relaxed text-lg mb-6">
+            Welcome, and thank you for visiting Gurudwara Singh Sabha Richmond, VA online.
+            We hope that our website highlights the wide variety of worship, fellowship and
+            service opportunities available.
+          </p>
+          <p class="text-primary-700 dark:text-primary-300 leading-relaxed text-lg">
+            Please feel free to read more about our Gurudwara on this site, or come in for a visit.
+            Everyone is welcome regardless of faith, background, or tradition.
+          </p>
+        </div>
+        <!-- Decorative floating element -->
+        <div class="absolute -bottom-6 -right-6 w-32 h-32 border-2 border-accent-200/30 dark:border-accent-400/20 rounded-full animate-float-slow pointer-events-none" aria-hidden="true"></div>
+      </div>
+      <div class="relative h-80 lg:h-full min-h-[300px] rounded-2xl overflow-hidden">
+        <img
+          src="assets/home_back_ground.jpeg"
+          alt="Gurudwara Singh Sabha"
+          class="w-full h-full object-cover rounded-2xl"
+          loading="lazy"
+        >
+        <div class="absolute inset-0 bg-gradient-to-t from-cream-50/20 dark:from-primary-900/30 to-transparent"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section — interactive bento cards with staggered entrance -->
+<section #sectionReveal id="services" class="section-default section-dark scroll-section">
+  <div class="content-container">
+    <div class="text-center mb-14">
+      <span class="text-accent-500 dark:text-accent-400 text-sm font-semibold tracking-widest uppercase">Our Offerings</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-primary-800 dark:text-cream-50 mt-3">Services &amp; Programs</h2>
+      <p class="text-primary-700 dark:text-primary-300 mt-4 max-w-2xl mx-auto">Discover the many ways to connect, learn, and grow with our community.</p>
     </div>
 
-    <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
-      Gurudwara Singh Sabha Richmond VA
-    </h1>
-    <p class="text-xl text-white/90 max-w-3xl mb-8">
-      Welcome to our spiritual home. Experience the divine teachings of Guru Granth Sahib Ji
-      and join our vibrant community in prayer, service, and celebration.
-    </p>
-    <div class="flex flex-wrap justify-center gap-4">
-      <a routerLink="/services/weekly-programs" class="btn-primary">
-        Weekly Programs
-      </a>
-      <a routerLink="/about" class="btn-outline border-white text-white hover:bg-gray-100 hover:text-primary-600">
-        Learn More
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      <div class="bento-card flex flex-col h-full cursor-pointer">
+        <div class="w-14 h-14 rounded-2xl bg-accent-50 dark:bg-primary-700 flex items-center justify-center mb-6 transition-transform duration-300 icon-hover">
+          <i class="fa-solid fa-calendar-days text-2xl text-accent-500 dark:text-accent-400"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-primary-800 dark:text-cream-50 mb-4">Weekly Programs</h3>
+        <p class="text-primary-700 dark:text-primary-300 leading-relaxed flex-grow mb-6">
+          Join us for our weekly Sunday Deewan services, Khalsa School, and community activities.
+          Experience spiritual enlightenment through Kirtan, Katha, and Langar Seva.
+        </p>
+        <a routerLink="/services/weekly-programs" class="link-primary inline-flex items-center gap-2 font-medium mt-auto group">
+          Learn More
+          <svg class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="bento-card flex flex-col h-full cursor-pointer">
+        <div class="w-14 h-14 rounded-2xl bg-accent-50 dark:bg-primary-700 flex items-center justify-center mb-6 transition-transform duration-300 icon-hover">
+          <i class="fa-solid fa-calendar-check text-2xl text-accent-500 dark:text-accent-400"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-primary-800 dark:text-cream-50 mb-4">Monthly Programs</h3>
+        <p class="text-primary-700 dark:text-primary-300 leading-relaxed flex-grow mb-6">
+          Join us for special monthly events including Sangrand celebrations,
+          Masya programs, and seasonal festivals. We organize Kirtan Darbars,
+          youth activities, and community gatherings.
+        </p>
+        <a routerLink="/events" class="link-primary inline-flex items-center gap-2 font-medium mt-auto group">
+          Learn More
+          <svg class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="bento-card flex flex-col h-full cursor-pointer">
+        <div class="w-14 h-14 rounded-2xl bg-accent-50 dark:bg-primary-700 flex items-center justify-center mb-6 transition-transform duration-300 icon-hover">
+          <i class="fa-solid fa-book-open text-2xl text-accent-500 dark:text-accent-400"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-primary-800 dark:text-cream-50 mb-4">Religious Services</h3>
+        <p class="text-primary-700 dark:text-primary-300 leading-relaxed flex-grow mb-6">
+          We offer various services including Akhand Path, Sehaj Path,
+          and Sukhmani Sahib Path. Our Gurudwara provides a peaceful environment
+          for prayer, meditation, and ceremonies.
+        </p>
+        <a routerLink="/services/religious-services" class="link-primary inline-flex items-center gap-2 font-medium mt-auto group">
+          Learn More
+          <svg class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="text-center mt-10">
+      <a routerLink="/services/religious-services" class="link-primary inline-flex items-center gap-2 font-medium">
+        View All Services
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
       </a>
     </div>
   </div>
 </section>
 
-<!-- Welcome Section -->
-<section class="section-default section-dark">
+<!-- Upcoming Events Preview -->
+<section #sectionReveal class="section-default section-light scroll-section">
   <div class="content-container">
-    <div class="content-narrow">
-      <h2 class="heading-2 mb-6">Welcome to Our Spiritual Home</h2>
-      <p class="text-body mb-8">
-        Welcome, and thank you for visiting Gurudwara Singh Sabha Richmond, VA online.
-        We hope that our website highlights the wide variety of worship, fellowship and
-        service opportunities available. Please feel free to read more about our Gurudwara
-        on this site, or come in for a visit.
-      </p>
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+      <div>
+        <span class="text-accent-500 dark:text-accent-400 text-sm font-semibold tracking-widest uppercase">Stay Connected</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-primary-800 dark:text-cream-50 mt-3">Upcoming Events</h2>
+      </div>
+      <a routerLink="/events" class="link-primary inline-flex items-center gap-2 font-medium mt-4 md:mt-0">
+        View Calendar
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="rounded-2xl overflow-hidden bg-white dark:bg-primary-700 shadow-sm hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+        <div class="h-48 bg-gradient-to-br from-accent-400 to-accent-600 flex items-center justify-center">
+          <div class="text-center text-white">
+            <div class="text-5xl font-bold">15</div>
+            <div class="text-lg font-medium">June</div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-primary-800 dark:text-cream-50 mb-2">Sunday Deewan</h3>
+          <p class="text-primary-700 dark:text-primary-300 text-sm mb-4">Weekly Kirtan, Katha, and Langar Seva</p>
+          <div class="flex items-center gap-2 text-primary-500 dark:text-primary-400 text-sm">
+            <i class="fa-solid fa-clock text-xs"></i>
+            <span>10:00 AM - 2:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-2xl overflow-hidden bg-white dark:bg-primary-700 shadow-sm hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+        <div class="h-48 bg-gradient-to-br from-saffron-400 to-saffron-600 flex items-center justify-center">
+          <div class="text-center text-white">
+            <div class="text-5xl font-bold">22</div>
+            <div class="text-lg font-medium">June</div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-primary-800 dark:text-cream-50 mb-2">Sangrand Celebration</h3>
+          <p class="text-primary-700 dark:text-primary-300 text-sm mb-4">New month prayers and community gathering</p>
+          <div class="flex items-center gap-2 text-primary-500 dark:text-primary-400 text-sm">
+            <i class="fa-solid fa-clock text-xs"></i>
+            <span>9:30 AM - 1:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-2xl overflow-hidden bg-white dark:bg-primary-700 shadow-sm hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+        <div class="h-48 bg-gradient-to-br from-primary-600 to-primary-800 flex items-center justify-center">
+          <div class="text-center text-white">
+            <div class="text-5xl font-bold">29</div>
+            <div class="text-lg font-medium">June</div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-primary-800 dark:text-cream-50 mb-2">Youth Kirtan Darbar</h3>
+          <p class="text-primary-700 dark:text-primary-300 text-sm mb-4">Special program featuring young Kirtanis</p>
+          <div class="flex items-center gap-2 text-primary-500 dark:text-primary-400 text-sm">
+            <i class="fa-solid fa-clock text-xs"></i>
+            <span>11:00 AM - 3:00 PM</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Services Grid -->
-<section id="services" class="section-default section-light">
-  <div class="content-container">
-    <h2 class="heading-2 text-center mb-12">Our Services</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Testimonials / Community Voices -->
+<section #sectionReveal class="section-default section-primary scroll-section relative overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+    <div class="absolute top-10 right-10 w-64 h-64 border border-accent-400/10 rounded-full animate-float-slow"></div>
+    <div class="absolute bottom-10 left-10 w-48 h-48 border border-accent-400/10 rounded-full animate-float-slower" style="animation-delay: -4s"></div>
+  </div>
+  <div class="content-container relative">
+    <div class="text-center mb-12">
+      <span class="text-accent-400 text-sm font-semibold tracking-widest uppercase">Community Voices</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-cream-50 mt-3">What Our Sangat Says</h2>
+    </div>
 
-      <!-- Weekly Programs -->
-      <div class="card p-8 hover:shadow-lg transition">
-        <div class="flex flex-col h-full">
-          <div class="flex items-center mb-4">
-            <div class="icon-circle">
-              <i class="fa-solid fa-calendar-days icon-circle-icon"></i>
+    <div class="max-w-3xl mx-auto relative">
+      <div class="overflow-hidden">
+        @for (t of testimonials; track t.author; let i = $index) {
+          <div
+            class="transition-all duration-500 ease-in-out"
+            [class.opacity-0]="i !== activeTestimonial()"
+            [class.opacity-100]="i === activeTestimonial()"
+            [class.absolute]="i !== activeTestimonial()"
+            [class.relative]="i === activeTestimonial()"
+            [class.-translate-x-full]="i < activeTestimonial()"
+            [class.translate-x-full]="i > activeTestimonial()"
+            [class.translate-x-0]="i === activeTestimonial()"
+          >
+            <div class="text-center px-4">
+              <i class="fa-solid fa-quote-left text-4xl text-accent-400/40 mb-6 block"></i>
+              <p class="text-xl md:text-2xl text-cream-50/90 leading-relaxed mb-8 italic">&ldquo;{{ t.text }}&rdquo;</p>
+              <div class="font-semibold text-accent-400 text-lg">{{ t.author }}</div>
+              <div class="text-primary-200 text-sm mt-1">{{ t.role }}</div>
             </div>
-            <h3 class="heading-3">Weekly Programs</h3>
           </div>
-          <p class="text-body mb-6 flex-grow">
-            Join us for our weekly Sunday Deewan services, Khalsa School, and community activities.
-            Experience spiritual enlightenment through Kirtan, Katha, and Langar Seva.
-          </p>
-          <div class="mt-4">
-            <a routerLink="/services/weekly-programs" class="link-primary inline-flex items-center">
-              Learn More
-              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </a>
-          </div>
-        </div>
+        }
       </div>
 
-      <!-- Monthly Programs -->
-      <div class="card p-8 hover:shadow-lg transition">
-        <div class="flex flex-col h-full">
-          <div class="flex items-center mb-4">
-            <div class="icon-circle">
-              <i class="fa-solid fa-calendar-check icon-circle-icon"></i>
-            </div>
-            <h3 class="heading-3">Monthly Programs & Events</h3>
-          </div>
-          <p class="text-body mb-6 flex-grow">
-            Join us for our special monthly events including Sangrand (New Month) celebrations,
-            Masya (No Moon) programs, and seasonal festivals. We regularly organize Kirtan Darbars,
-            youth activities, and community gatherings to strengthen our bonds and spiritual connection.
-          </p>
-          <div class="mt-4">
-            <a routerLink="/events" class="link-primary inline-flex items-center">
-              Learn More
-              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </a>
-          </div>
-        </div>
+      <div class="flex items-center justify-center gap-3 mt-10">
+        <button (click)="prevTestimonial()" class="w-10 h-10 rounded-full border border-accent-400/40 text-accent-400 hover:bg-accent-500/20 transition-all duration-200 flex items-center justify-center cursor-pointer" aria-label="Previous testimonial">
+          <i class="fa-solid fa-chevron-left text-sm"></i>
+        </button>
+        @for (t of testimonials; track t.author; let i = $index) {
+          <button
+            (click)="selectTestimonial(i)"
+            class="w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer"
+            [class.bg-accent-400]="i === activeTestimonial()"
+            [class.bg-accent-400/30]="i !== activeTestimonial()"
+            [class.w-8]="i === activeTestimonial()"
+            [attr.aria-label]="'Go to testimonial ' + (i + 1)"
+          ></button>
+        }
+        <button (click)="nextTestimonial()" class="w-10 h-10 rounded-full border border-accent-400/40 text-accent-400 hover:bg-accent-500/20 transition-all duration-200 flex items-center justify-center cursor-pointer" aria-label="Next testimonial">
+          <i class="fa-solid fa-chevron-right text-sm"></i>
+        </button>
       </div>
-
-      <!-- Religious Services -->
-      <div class="card p-8 hover:shadow-lg transition">
-        <div class="flex flex-col h-full">
-          <div class="flex items-center mb-4">
-            <div class="icon-circle">
-              <i class="fa-solid fa-book-open icon-circle-icon"></i>
-            </div>
-            <h3 class="heading-3">Religious Services</h3>
-          </div>
-          <p class="text-body mb-6 flex-grow">
-            We offer various religious services including Akhand Path, Sehaj Path,
-            and Sukhmani Sahib Path. Our Gurudwara provides a peaceful environment
-            for prayer and meditation. Special arrangements can be made for
-            ceremonies and religious events.
-          </p>
-          <div class="mt-4">
-            <a routerLink="/services/religious-services" class="link-primary inline-flex items-center">
-              Learn More
-              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
 
 <!-- Mission Section -->
-<section class="section-default section-primary">
+<section #sectionReveal class="section-default section-dark scroll-section">
   <div class="content-container">
-    <div class="content-narrow">
-      <h2 class="heading-2 text-white mb-6">Our Mission</h2>
-      <p class="text-lg mb-8">
-        The objective of Gurudwara Singh Sabha is to Preach Guru Nanak Dev Ji's universal
-        message of brotherhood, learn, practice and promote religious, cultural and social
-        values based on the concept of Guru Nanak Dev Ji's and universal brotherhood as
-        taught by ten Sikh Gurus and Guru Granth Sahib.
+    <div class="max-w-4xl mx-auto">
+      <div class="bento-card p-10 lg:p-12 text-center">
+        <span class="text-accent-500 dark:text-accent-400 text-sm font-semibold tracking-widest uppercase mb-4 block">Our Mission</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-primary-800 dark:text-cream-50 mb-6 leading-tight">
+          Universal Brotherhood
+        </h2>
+        <p class="text-primary-700 dark:text-primary-300 leading-relaxed text-lg mb-8 max-w-3xl mx-auto">
+          The objective of Gurudwara Singh Sabha is to preach Guru Nanak Dev Ji's universal
+          message of brotherhood, learn, practice and promote religious, cultural and social
+          values based on the concept of universal brotherhood as taught by ten Sikh Gurus
+          and Guru Granth Sahib.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a routerLink="/about" class="btn-primary inline-flex items-center gap-2 cursor-pointer">
+            Learn More About Us
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a routerLink="/contact" class="btn-outline border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white inline-flex items-center gap-2 cursor-pointer">
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter / Stay Connected -->
+<section #sectionReveal class="section-default section-light scroll-section">
+  <div class="content-container">
+    <div class="max-w-2xl mx-auto text-center">
+      <span class="text-accent-500 dark:text-accent-400 text-sm font-semibold tracking-widest uppercase mb-4 block">Stay Connected</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-primary-800 dark:text-cream-50 mb-4 leading-tight">
+        Join Our Community
+      </h2>
+      <p class="text-primary-700 dark:text-primary-300 mb-8">
+        Subscribe to receive updates about upcoming events, programs, and community news.
       </p>
-      <a routerLink="/about" class="btn-outline border-white text-white hover:bg-gray-100 hover:text-primary-600">
-        Learn More About Us
-      </a>
+      <div class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="flex-1 px-5 py-3 rounded-xl border border-cream-200 dark:border-primary-600 bg-white dark:bg-primary-700 text-primary-800 dark:text-cream-50 placeholder:text-primary-300 focus:outline-none focus:ring-2 focus:ring-accent-500/50 transition-all duration-200"
+        >
+        <button class="btn-primary whitespace-nowrap cursor-pointer">
+          <i class="fa-solid fa-paper-plane mr-2"></i>
+          Subscribe
+        </button>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- Contact Section -->
-<section class="section-default section-light">
+<section #sectionReveal class="section-default section-dark scroll-section">
   <div class="content-container">
-    <div class="content-narrow">
-      <h2 class="heading-2 mb-6">Visit Us</h2>
-      <app-contact-info [directionsClass]="'btn-primary'" />
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div class="text-center lg:text-left">
+        <span class="text-accent-500 dark:text-accent-400 text-sm font-semibold tracking-widest uppercase mb-4 block">Visit Us</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-primary-800 dark:text-cream-50 mb-6 leading-tight">
+          We Welcome You
+        </h2>
+        <p class="text-primary-700 dark:text-primary-300 leading-relaxed mb-8">
+          Everyone is welcome at Gurudwara Singh Sabha. Whether you wish to pray, meditate,
+          learn, or simply find a moment of peace — our doors are open to all.
+        </p>
+        <app-contact-info [directionsClass]="'btn-primary'" />
+      </div>
+      <div class="h-64 lg:h-80 rounded-2xl overflow-hidden bg-cream-200 dark:bg-primary-700 flex items-center justify-center">
+        <div class="text-center text-primary-400 dark:text-primary-500">
+          <i class="fa-solid fa-map-location-dot text-5xl mb-4"></i>
+          <p class="font-medium">Map preview would load here</p>
+          <p class="text-sm mt-1">via Google Maps embed</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>

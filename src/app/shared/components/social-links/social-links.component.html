@@ -2,14 +2,14 @@
   <ng-container *ngFor="let link of socialLinks | keyvalue">
     <a [href]="link.value" target="_blank" rel="noopener noreferrer" (click)="trackSocialLinkClick(link.key)"
       class="transition-colors duration-200 group">
-      <div class="p-2 rounded-full group-hover:bg-gray-200 dark:group-hover:bg-gray-700">
+      <div class="p-2 rounded-full group-hover:bg-accent-100 dark:group-hover:bg-gray-700">
         <i [class]="'fab fa-' + link.key + ' text-5xl ' + getSocialIconColor(link.key)" aria-hidden="true"></i>
       </div>
     </a>
   </ng-container>
   <a href="https://github.com/gurpreetsingh840/temple-webapp" target="_blank" rel="noopener noreferrer"
     (click)="trackSocialLinkClick('github')" class="transition-colors duration-200 group">
-    <div class="p-2 rounded-full group-hover:bg-gray-200 dark:group-hover:bg-gray-700">
+    <div class="p-2 rounded-full group-hover:bg-accent-100 dark:group-hover:bg-gray-700">
       <i class="fab fa-github text-5xl text-gray-600 hover:text-gray-500" aria-hidden="true"></i>
     </div>
   </a>

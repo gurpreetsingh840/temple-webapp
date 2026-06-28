@@ -19,7 +19,7 @@ import { ContactInfoService } from '../../services/contact-info.service';
 
       @if (showPhone()) {
         <p [class]="textClass()">
-          <i class="fa-solid fa-phone w-6 text-center mr-2 text-orange-600 dark:text-orange-400"></i>
+          <i class="fa-solid fa-phone w-6 text-center mr-2 text-accent-600 dark:text-orange-400"></i>
           <a [href]="'tel:' + contactInfo.phone" class="link-base">
             {{ contactInfo.phone }}
           </a>
@@ -28,7 +28,7 @@ import { ContactInfoService } from '../../services/contact-info.service';
 
       @if (showEmail()) {
         <p [class]="textClass()">
-          <i class="fa-solid fa-envelope w-6 text-center mr-2 text-orange-600 dark:text-orange-400"></i>
+          <i class="fa-solid fa-envelope w-6 text-center mr-2 text-accent-600 dark:text-orange-400"></i>
           <a [href]="'mailto:' + contactInfo.email" class="link-base">
             {{ contactInfo.email }}
           </a>
@@ -55,9 +55,9 @@ export class ContactInfoComponent {
   showEmail = input<boolean>(true);
   showDirections = input<boolean>(true);
   containerClass = input<string>('');
-  textClass = input<string>('mb-2 text-gray-600 dark:text-gray-300');
+  textClass = input<string>('mb-2 text-primary-600 dark:text-gray-300');
   directionsClass = input<string>(
-    'inline-flex items-center text-orange-500 hover:text-orange-400 transition-colors duration-200'
+    'inline-flex items-center text-accent-500 hover:text-orange-400 transition-colors duration-200'
   );
 
   // Inject services using modern inject() function

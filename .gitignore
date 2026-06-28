@@ -2,6 +2,8 @@
 
 # Dependencies
 /node_modules
+/.opencode
+/.agents
 
 # Compiled output
 /dist

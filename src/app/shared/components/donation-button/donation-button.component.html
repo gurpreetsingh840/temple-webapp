@@ -1,26 +1,31 @@
 @if (donationSettings) {
     <div class="support-section">
         @if (showTitle()) {
-            <h3 class="text-lg font-semibold text-white mb-3">
+            <h3 class="text-lg font-semibold mb-3"
+                [class.text-white]="context() === 'footer'"
+                [class.text-primary-800]="context() !== 'footer'">
                 {{ getSupportMessage().title }}
             </h3>
-            <p class="text-gray-300 mb-4">
+            <p class="mb-4"
+                [class.text-gray-300]="context() === 'footer'"
+                [class.text-primary-600]="context() !== 'footer'">
                 {{ getSupportMessage().description }}
             </p>
         }
 
         @if (donationSettings.enabled) {
             <a [href]="donationSettings.paypalLink" target="_blank" rel="noopener noreferrer"
-                [class]="buttonClass() || 'inline-flex items-center justify-center px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white font-medium rounded-lg transition-colors duration-200'">
+                [class]="buttonClass() || 'inline-flex items-center justify-center px-6 py-3 bg-accent-500 hover:bg-accent-600 text-white font-medium rounded-lg transition-colors duration-200'">
                 <i class="fa-solid fa-heart mr-2"></i>
                 Donate Now
             </a>
         } @else {
-            <div class="text-gray-300">
+            <div [class.text-gray-300]="context() === 'footer'"
+                 [class.text-primary-500]="context() !== 'footer'">
                 <p>{{ contactMessage }}</p>
                 @if (context() !== 'contact') {
                     <a routerLink="/contact" (click)="trackContactManagement()"
-                        class="text-orange-600 dark:text-orange-400 hover:underline mt-2 inline-block">
+                        class="text-accent-500 hover:text-accent-600 hover:underline mt-2 inline-block">
                         Contact Management →
                     </a>
                 }

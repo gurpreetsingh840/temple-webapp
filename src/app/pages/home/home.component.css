@@ -1,37 +1,39 @@
-/* Khanda Page Load Animation */
-@keyframes khanda-load-bounce {
-	0% {
-		transform: scale(0.2);
-		opacity: 0;
-	}
-	60% {
-		transform: scale(1.15);
-		opacity: 1;
-	}
-	80% {
-		transform: scale(0.95);
-	}
-	100% {
-		transform: scale(1);
-	}
+/* Scroll-reveal: sections fade+slide up on scroll (Premium stagger) */
+.scroll-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 600ms cubic-bezier(0.4, 0, 0.2, 1),
+              transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.khanda-logo {
-	max-width: 8rem;
-	width: 100%;
-	height: auto;
-	filter: drop-shadow(0 0 32px #fde68a) drop-shadow(0 0 16px #fff7ae);
+.scroll-section.section-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.khanda-animate-in {
-	animation: khanda-load-bounce 1.2s cubic-bezier(.68,-0.55,.27,1.55) 1;
+/* Icon hover micro-interaction (motion-design-skill: Premium hover) */
+.bento-card:hover .icon-hover {
+  transform: scale(1.1) rotate(-5deg);
 }
 
-@keyframes khanda-pulse {
-	0%, 100% { transform: scale(1) rotate(-6deg); }
-	50% { transform: scale(1.08) rotate(6deg); }
+/* Event card image gradient hover */
+.bento-card:hover .fa-arrow-right {
+  transform: translateX(4px);
 }
-.animate-khanda {
-	animation: khanda-pulse 3.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+
+/* Smooth image reveal */
+img[loading="lazy"] {
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1),
+              filter 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-section {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .bento-card:hover .icon-hover {
+    transform: none;
+  }
 }
